@@ -113,7 +113,92 @@
 
 </section>
 
-<h1>1.6 HTML-Literatur lesen und Fragen beantworten</h1>
+    <h1>1.6 HTML-Literatur lesen und Fragen beantworten</h1>
+    <h2>Aufgabenstellung:</h2>
+    <ul type="1">
+        <li>Was ist HTML?</li>
+        <li>Wie kann man eine geschachtelte geordnete Liste der Tiefe 3 erzeugen?</li>
+        <li>Wie ist eine HTML-Tabelle aufgebaut?</li>
+        <li>Welche Konventionen sollte man bei Pfaden und Dateinamen beachten?</li>
+        <li>Wie baut man in HTML ein Menü?</li>
+        <li>Welche Attribute sollte man bei Bildern wie verwenden?</li>
+    </ul>
+    <h2>Lösung</h2>
+
+    <ul type="1">
+        <li>HTML ist die Standard Markup Sprache für Webseiten</li>
+        <li>Man erstellt eine Nested List mit geschachelten &lt;ul&gt; Tags</li>
+        <li>Tables beginnen mit dem Tag &lt;table&gt;. Zeilen haben den Tag &lt;tr&gt;
+            (Table Row) und Spalten für die Zeilen werden mit dem tag &lt;th&gt; (Table Header) erstellt.
+            Die Zeilen werden dann mit dem Tag &lt;td&gt; (Table Data) gefüllt. </li>
+        <li>Dateinamen sollten klein geschrieben, keine Leerzeichen und nur Buchstaben, Zahlen und
+            Bindestriche/Unterstriche enthalten. Pfade die im Root Verzeichnis Starten sollen fangen mit
+            "/" an und Pfade die im jetzigen Verzeichnis starten, beginnen mit "./"</li>
+        <li>Menüs können mit dem &lt;menu&gt; Tag erstellt werden</li>
+        <li>Für Bild sollte die Attribute: src, alt und width/heigth nutzen. src beschreibt den Dateipfad
+            des BIlder. alt ist ein Alternativnamen für das Bild, falls es nicht geladen werden konnte. height und
+            width sind die Höhe und Breite des Bildes in Pixel</li>
+    </ul>
+
+<section>
+    <h1>1.7 HTML-Wireframe</h1>
+
+
+
+    <h1>Übung 1.2: Inventors of the Web</h1>
+    <ul>
+        <li><b><u><mark>Tim Berners-Lee:</mark></u></b> WWW, HTTP, HTML, URI</li>
+        <li><b>Hakom Lie and Bert Bos:</b> CSS</li>
+        <li><b>Brendan EIch:</b> JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <h2>Inventors of the Web</h2>
+    <table border="10">
+        <th colspan="4">Inventors of the Web</th>
+        <tr>
+            <th><b>WWW</b></th>
+            <th><b>HTML</b></th>
+            <th><b>CSS</b></th>
+            <th><b>JavaScript</b></th>
+        </tr>
+        <tr>
+            <td><mark>Tim Burners Lee</mark></td>
+            <td><mark>Tim Burners Lee</mark></td>
+            <td>Hakom Lie and Bert Bos</td>
+            <td>Brendan Eich</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Inventors of the WWW</h2>
+
+    <hr align="left" width="25%">
+
+    <table>
+        <tr>
+            <th><b>HTML</b></th>
+            <th><b>|</b></th>
+            <th><b>JavaScript</b></th>
+        </tr>
+        <tr>
+            <td><img src="https://kaul.inf.h-brs.de/ccm/we/ws23/resources/assets/tbl.jpg"></td>
+            <td>|</td>
+            <td><img src="https://kaul.inf.h-brs.de/ccm/we/ws23/resources/assets/eich.jpg"></td>
+        </tr>
+        <tr>
+            <td><mark>Tim Burners Lee</mark></td>
+            <td>|</td>
+            <td>Brendan Eich</td>
+        </tr>
+    </table>
+
+    <hr>
+</section>
+
+
 </body>
 
 </html>
