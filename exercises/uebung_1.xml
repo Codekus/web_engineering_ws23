@@ -1,0 +1,33 @@
+<root>
+    <exercise>Übung 1</exercise>
+    <task type="Text">
+        <title>1.1 World Wide Web</title>
+        <question>
+            <title>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</title>
+            <solution>Das WWW Proposal wurde als vage bezeichnet. Das wurde aber mit der Evolvierbarkeit verwechselt.</solution>
+        </question>
+        <question>
+            <title>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</title>
+            <solution>Das WWW wurde erfolgreich, da es die Möglichkeit bietet, verschiedene Technologien unabhängig voneinander zu entwickeln</solution>
+        </question>
+        <question>
+            <title>Was wäre der Preis für die garantierte Verhinderung von "broken links"?</title>
+            <solution>Einführung der referenziellen Integrität und regelmäßige Überwachung zur Sicherstellung der Link-Qualität sind erforderlich.</solution>
+        </question>
+    </task>
+
+    <task type="quiz">
+        <question>
+            <title></title>
+            <solution></solution>
+        </question>
+        <question>
+            <title></title>
+            <solution></solution>
+        </question>
+        <question>
+            <title></title>
+            <solution></solution>
+        </question>
+    </task>
+</root>
