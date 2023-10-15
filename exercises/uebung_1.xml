@@ -3,30 +3,56 @@
     <task type="Text">
         <title>1.1 World Wide Web</title>
         <question>
-            <title>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</title>
+            <subtitle>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</subtitle>
             <solution>Das WWW Proposal wurde als vage bezeichnet. Das wurde aber mit der Evolvierbarkeit verwechselt.</solution>
         </question>
         <question>
-            <title>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</title>
+            <subtitle>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</subtitle>
             <solution>Das WWW wurde erfolgreich, da es die Möglichkeit bietet, verschiedene Technologien unabhängig voneinander zu entwickeln</solution>
         </question>
         <question>
-            <title>Was wäre der Preis für die garantierte Verhinderung von "broken links"?</title>
+            <subtitle>Was wäre der Preis für die garantierte Verhinderung von "broken links"?</subtitle>
             <solution>Einführung der referenziellen Integrität und regelmäßige Überwachung zur Sicherstellung der Link-Qualität sind erforderlich.</solution>
         </question>
     </task>
 
-    <task type="quiz">
+    <task type="Text">
+        <title>1.2 HTTP</title>
         <question>
-            <title></title>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</subtitle>
+            <solution>HTTP Status Code 200 -> OK. Die Request wurde erfolgreich verarbeitet</solution>
+        </question>
+        <question>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 301. Was hat das zu bedeuten?</subtitle>
+            <solution>Der Zielressource wurde eine neue, permanente URL zugewiesen die für zukünftige Anfragen genutzt werden soll.</solution>
+        </question>
+        <question>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 400. Was hat das zu bedeuten? Was können Sie dagegen tun?</subtitle>
+            <solution>Die Request des Clients ist fehlerhaft</solution>
+        </question>
+        <question>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 403. Was hat das zu bedeuten? Was können Sie dagegen tun?</subtitle>
+            <solution>Client ist nicht authorisiert für diesen Zugriff</solution>
+        </question>
+        <question>
+            <subtitle>In einer Webanwendung benötigen Sie eine OPTIONS-Anfrage, die die Optionen des Servers vor dem eigentlichen Zugriff erfragen soll.
+                Aus Performancegründen soll die Abfrage aber cacheable sein. Wie könnten Sie dafür eine Lösung angehen?</subtitle>
+            <solution>Statt einer OPTIONS Request kann man eine GET Request versenden</solution>
+        </question>
+    </task>
+
+    <task type="codeblock">
+        <title></title>
+        <question>
+            <subtitle></subtitle>
             <solution></solution>
         </question>
         <question>
-            <title></title>
+            <subtitle></subtitle>
             <solution></solution>
         </question>
         <question>
-            <title></title>
+            <subtitle></subtitle>
             <solution></solution>
         </question>
     </task>

@@ -11,6 +11,32 @@
     <section>
         <a href="uebung_1.html">Zu Übung 1</a>
     </section>
+
+    <button onclick="another(this.textContent)">Uebung1</button>
+    <button onclick="appendToBody(htmlElement())"></button>
+    <button id="textid" data-content="exercises/uebung_1.xml" onclick="loadTextFile(this.getAttribute('data-content'))"></button>
+
+    <form action="uebung_template.html">
+        <p>
+            <label for="foo">Vorname:</label>
+            <input id="foo" type="text" name="exercise">
+        </p>
+        <button>Abschicken</button>
+        <button type="button">Was anderes</button>
+    </form>
+
+    <button data-content="exercises/uebung_1.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Abschicken</button>
+
+    <script>
+        function redirectToExercise(exercise) {
+            window.location.href = 'uebung_template.html?exercise=' + exercise;
+        }
+    </script>
+
 </body>
+
+
+<script src="scripts/read_xml.js"></script>
+<script src="scripts/more.js"></script>
 
 </html>
