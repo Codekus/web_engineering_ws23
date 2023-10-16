@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body onload="loadTextFile()">
+<body onload="loadSite()">
     <div id="textid"></div>
+    <div onload="" class="header"></div>
 <script src="scripts/read_xml.js"></script>
+<script src="scripts/header.js"></script>
+<script>function loadSite() {
+    loadXMLFile();
+    loadHeader();
+}</script>
 </body>
+
 </html>
