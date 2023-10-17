@@ -1,13 +1,13 @@
 <root>
     <exercise>Übung 1</exercise>
-    <task type="Text">
+    <task type="text">
         <title>1.1 World Wide Web</title>
         <question>
             <subtitle>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</subtitle>
             <solution>Das WWW Proposal wurde als vage bezeichnet. Das wurde aber mit der Evolvierbarkeit verwechselt.</solution>
         </question>
         <question>
-            <subtitle>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</subtitle>
+            <subtitle>Was sind die fachlichen Argumente, warum das WWW dennoch ein Erfolg wurde?</subtitle>
             <solution>Das WWW wurde erfolgreich, da es die Möglichkeit bietet, verschiedene Technologien unabhängig voneinander zu entwickeln</solution>
         </question>
         <question>
@@ -16,7 +16,7 @@
         </question>
     </task>
 
-    <task type="Text">
+    <task type="text">
         <title>1.2 HTTP</title>
         <question>
             <subtitle>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</subtitle>

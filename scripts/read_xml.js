@@ -8,19 +8,56 @@ function loadXMLFile() {
         .then(data => {
             var parser = new DOMParser();
             var xmlDoc = parser.parseFromString(data, 'text/xml');
+            document.getElementById('textid').innerHTML = xmlDoc.querySelector('exercise').textContent;
+            var i = 0;
+            var textTasks = xmlDoc.querySelectorAll("task[type='text']")
+            for(var task of textTasks) {
+                const textSection = createTaskTextSection();
+                const title = createH1Title(task.querySelector("title").textContent)
+                const questions = task.querySelectorAll("question")
+                textSection.appendChild(title)
+                for(var ques of questions) {
+                    const question = document.createElement("div")
+                    question.setAttribute("class", "question")
 
-            var uebungTitel = xmlDoc.querySelector('exercise').textContent;
+                    const subtitle = document.createElement("div")
+                    subtitle.setAttribute("class", "subtitle")
+                    subtitle.innerHTML = ques.querySelector("subtitle").textContent
 
-            var titleVariable = uebungTitel;
+                    const solution = document.createElement("div")
+                    solution.setAttribute("class", "solution")
+                    solution.innerHTML = ques.querySelector("solution").textContent
 
-            // Display the extracted text in the HTML element
-            document.getElementById('textid').innerHTML = titleVariable;
-    })
+                    question.appendChild(subtitle)
+                    question.appendChild(solution)
+
+                    textSection.appendChild(question)
+                    document.getElementById("content").appendChild(textSection)
+                }
+
+
+            }
+    });
 }
 
 
-function createTextSection(resultSet) {
+function createTaskTextSection() {
+    const section = document.createElement("section")
+    section.setAttribute("class", "task-text")
+    return section;
+}
 
+function createCodeTextSection() {
+    const section = document.createElement("section")
+    section.setAttribute("class", "task-code")
+    return section;
+}
+
+function createH1Title(text) {
+    const title = document.createElement("h1")
+    title.setAttribute("class", "title")
+    title.innerHTML = text
+    return title;
 }
 
 function another(text) {
