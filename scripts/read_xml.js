@@ -12,7 +12,13 @@ function loadXMLFile() {
         .then(data => {
             var parser = new DOMParser();
             var xmlDoc = parser.parseFromString(data, 'text/xml');
-            document.getElementById('textid').innerHTML = xmlDoc.querySelector('exercise').textContent;
+
+            // immediately-invoked function expression IIFE
+            document.getElementById("content").appendChild((() => {
+                const header = document.createElement("h1");
+                header.innerHTML = xmlDoc.querySelector('exercise').textContent;
+                return header;
+            })());
             var textTasks = xmlDoc.querySelectorAll("task[type='text']")
             for (var task of textTasks) {
                 const textSection = createTaskTextSection();
