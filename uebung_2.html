@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+<style>
+    code {
+        white-space: pre-wrap;
+
+    }
+
+    .codeblock {
+        border: 1px solid black;
+        background: #f5eeed;
+    }
+
+    html {
+        background: #a9d7d1;
+        font-family: "Roboto", sans-serif;
+    }
+
+    form {
+        background: snow;
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    .form-title {
+        text-align: center; /* Center-align the contents horizontally */
+        margin: 0 auto;
+    }
+
+
+
+    .title {
+        text-align: right;
+        vertical-align: top;
+        display: block;
+    }
+
+
+    .group {
+        display: block;
+    }
+
+    table {
+        padding-left: 10%;
+        border-spacing: 5px;
+    }
+    td {
+        vertical-align: top;
+    }
+
+
+
+</style>
+</head>
+<body >
+<h1>Übung 2 CSS</h1>
+<div class="form-body">
+<h1 align="center">Survey Form</h1>
+<form>
+    <div class="form-title">Lets us know how we can improve freeCodeCamp</div>
+    <br>
+    <table>
+        <tr>
+            <td><label class="title">* Name:</label></td>
+            <td>&nbsp;</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label class="title">* Email:</label></td>
+            <td>&nbsp;</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td><label class="title">* Age:</label></td>
+            <td>&nbsp;</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td><label class="title" >Which option describes your current role:</label></td>
+            <td>&nbsp;</td>
+            <td><select  id="roles">
+                <option label="student">student</option>
+                <option label="professor">professor</option>
+                <option label="employee">employee</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><label class="title">How likely is it that you would recommend freeCodeCamp to a friend:</label></td>
+            <td>&nbsp;</td>
+            <td>
+                <label class="group"><input  type="radio">Definitely </label>
+                <label class="group"><input  type="radio">Maybe </label>
+                <label class="group"><input  type="radio">Not sure </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label class="title">What do you like the most about FCC:</label></td>
+            <td>&nbsp;</td>
+            <td>
+                <select  id="anotherSelect">
+                    <option label="Select an option">Select an option</option>
+                    <option label="another">another</option>
+                    <option label="and another">and another</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label class="title">How likely is it that you would recommend freeCodeCamp to a friend:</label></td>
+            <td>&nbsp;</td>
+            <td>
+                <label class="group"><input  type="checkbox" name="radioset" />Front end Projects</label>
+                <label class="group"><input  type="checkbox" name="radioset" />Back end Projects</label>
+                <label class="group"><input  type="checkbox" name="radioset" />Data visualization</label>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+
+
+
+<section >
+    <article>
+        <h1>HTML und CSS Quellcode</h1>
+        <div class="codeblock">
+<code>
+
+    &lt;!DOCTYPE html	&gt;
+    &lt;html lang="en"	&gt;
+    &lt;head	&gt;
+    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"	&gt;
+    &lt;meta charset="UTF-8"	&gt;
+    &lt;title	&gt;Title&lt;/title	&gt;
+    &lt;style	&gt;
+    html {
+    background: #a9d7d1;
+    font-family: "Roboto", sans-serif;
+    }
+
+    form {
+    background: snow;
+    padding: 15px;
+    border-radius: 25px;
+    }
+
+    .form-title {
+    text-align: center; /* Center-align the contents horizontally */
+    margin: 0 auto;
+    }
+
+
+
+    .title {
+    text-align: right;
+    vertical-align: top;
+    display: block;
+    }
+
+
+    .group {
+    display: block;
+    }
+
+    table {
+    padding-left: 10%;
+    border-spacing: 5px;
+    }
+    td {
+    vertical-align: top;
+    }
+
+    &lt;/style	&gt;
+    &lt;/head	&gt;
+    &lt;body	&gt;
+
+    &lt;h1 align="center"	&gt;Survey Form&lt;/h1	&gt;
+    &lt;form	&gt;
+        &lt;div class="form-title"	&gt;Lets us know how we can improve freeCodeCamp&lt;/div	&gt;
+        &lt;br	&gt;
+        &lt;table	&gt;
+            &lt;tr	&gt;
+                &lt;td	&gt;&lt;label class="title"	&gt;* Name:&lt;/label	&gt;&lt;/td	&gt;
+                &lt;td	&gt;&nbsp;&lt;/td	&gt;
+                &lt;td	&gt;&lt;input type="text"	&gt;&lt;/td	&gt;
+            &lt;/tr	&gt;
+            &lt;tr	&gt;
+                &lt;td	&gt;&lt;label class="title"	&gt;* Email:&lt;/label	&gt;&lt;/td	&gt;
+                &lt;td	&gt;&nbsp;&lt;/td	&gt;
+                &lt;td	&gt;&lt;input type="text"	&gt;&lt;/td	&gt;
+            &lt;/tr	&gt;
+
+            &lt;tr	&gt;
+                &lt;td	&gt;&lt;label class="title"	&gt;* Age:&lt;/label	&gt;&lt;/td	&gt;
+                &lt;td	&gt;&nbsp;&lt;/td	&gt;
+                &lt;td	&gt;&lt;input type="text"	&gt;&lt;/td	&gt;
+            &lt;/tr	&gt;
+
+            &lt;tr	&gt;
+                &lt;td	&gt;&lt;label class="title" 	&gt;Which option describes your current role:&lt;/label	&gt;&lt;/td	&gt;
+                &lt;td	&gt;&nbsp;&lt;/td	&gt;
+                &lt;td	&gt;&lt;select  id="roles"	&gt;
+                    &lt;option label="student"	&gt;student&lt;/option	&gt;
+                    &lt;option label="professor"	&gt;professor&lt;/option	&gt;
+                    &lt;option label="employee"	&gt;employee&lt;/option	&gt;
+                &lt;/select	&gt;&lt;/td	&gt;
+            &lt;/tr	&gt;
+
+            &lt;tr	&gt;
+                &lt;td	&gt;&lt;label class="title"	&gt;How likely is it that you would recommend freeCodeCamp to a friend:&lt;/label	&gt;&lt;/td	&gt;
+                &lt;td	&gt;&nbsp;&lt;/td	&gt;
+                &lt;td	&gt;
+                    &lt;label class="group"	&gt;&lt;input  type="radio"	&gt;Definitely &lt;/label	&gt;
+                    &lt;label class="group"	&gt;&lt;input  type="radio"	&gt;Maybe &lt;/label	&gt;
+                    &lt;label class="group"	&gt;&lt;input  type="radio"	&gt;Not sure &lt;/label	&gt;
+                &lt;/td	&gt;
+            &lt;/tr	&gt;
+
+            &lt;tr	&gt;
+                &lt;td	&gt;&lt;label class="title"	&gt;What do you like the most about FCC:&lt;/label	&gt;&lt;/td	&gt;
+                &lt;td	&gt;&nbsp;&lt;/td	&gt;
+                &lt;td	&gt;
+                    &lt;select  id="anotherSelect"	&gt;
+                        &lt;option label="Select an option"	&gt;Select an option&lt;/option	&gt;
+                        &lt;option label="another"	&gt;another&lt;/option	&gt;
+                        &lt;option label="and another"	&gt;and another&lt;/option	&gt;
+                    &lt;/select	&gt;
+                &lt;/td	&gt;
+            &lt;/tr	&gt;
+
+            &lt;tr	&gt;
+                &lt;td	&gt;&lt;label class="title"	&gt;How likely is it that you would recommend freeCodeCamp to a friend:&lt;/label	&gt;&lt;/td	&gt;
+                &lt;td	&gt;&nbsp;&lt;/td	&gt;
+                &lt;td	&gt;
+                    &lt;label class="group"	&gt;&lt;input  type="checkbox" name="radioset" /	&gt;Front end Projects&lt;/label	&gt;
+                    &lt;label class="group"	&gt;&lt;input  type="checkbox" name="radioset" /	&gt;Back end Projects&lt;/label	&gt;
+                    &lt;label class="group"	&gt;&lt;input  type="checkbox" name="radioset" /	&gt;Data visualization&lt;/label	&gt;
+                &lt;/td	&gt;
+            &lt;/tr	&gt;
+        &lt;/table	&gt;
+    &lt;/form	&gt;
+
+
+    &lt;/body	&gt;
+    &lt;/html	&gt;
+
+
+</code>
+        </div>
+        </article>
+</section>
+
+</body>
+</html>

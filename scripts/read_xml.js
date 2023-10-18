@@ -19,9 +19,9 @@ function loadXMLFile() {
                 header.innerHTML = xmlDoc.querySelector('exercise').textContent;
                 return header;
             })());
-            var textTasks = xmlDoc.querySelectorAll("task[type='text']")
+            var textTasks = xmlDoc.querySelectorAll("task")
             for (var task of textTasks) {
-                const textSection = createTaskTextSection();
+                const textSection = createTaskSection(task.getAttribute("type"));
                 const title = createH1Title(task.querySelector("title").textContent)
                 const questions = task.querySelectorAll("question")
                 textSection.appendChild(title)
@@ -45,9 +45,9 @@ function loadXMLFile() {
  * @returns
  * <section class="task-text"> </section>
  */
-function createTaskTextSection() {
+function createTaskSection(classValue) {
     const section = document.createElement("section")
-    section.setAttribute("class", "task-text")
+    section.setAttribute("class", classValue)
     return section;
 }
 

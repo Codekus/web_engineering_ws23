@@ -1,6 +1,7 @@
 <root>
     <exercise>Übung 1</exercise>
-    <task type="text">
+
+    <task type="task-text">
         <title>1.1 World Wide Web</title>
         <question>
             <subtitle>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</subtitle>
@@ -16,7 +17,7 @@
         </question>
     </task>
 
-    <task type="text">
+    <task type="task-text">
         <title>1.2 HTTP</title>
         <question>
             <subtitle>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</subtitle>
@@ -41,11 +42,41 @@
         </question>
     </task>
 
-    <task type="codeblock">
+    <task type="task-text">
+        <title>1.3 Quiz zu HTML</title>
+        <question>
+            <subtitle>Was ist HTML?</subtitle>
+            <solution>eine Auszeichnungssprache</solution>
+        </question>
+        <question>
+            <subtitle>Wofür steht HTML?</subtitle>
+            <solution>Hypertext Markup Language</solution>
+        </question>
+        <question>
+            <subtitle>Wofür wird HTML eingesetzt?</subtitle>
+            <solution>für die Strukturierung digitaler Dokumente</solution>
+        </question>
+        <question>
+            <subtitle>Wer hat HTML erfunden?</subtitle>
+            <solution>Tim Berners-Lee</solution>
+        </question>
+        <question>
+            <subtitle>Zu welchem ursprünglichen Zweck wurde HTML erfunden?</subtitle>
+            <solution>für den Austausch wissenschaftlicher Publikationen</solution>
+        </question>
+        <question>
+            <subtitle>Wer arbeitet alles an der Weiterentwicklung von HTML?</subtitle>
+            <solution>das World Wide Web Consortium (W3C). die Web Hypertext Application Technology Working Group (WHATWG)</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
         <title></title>
         <question>
-            <subtitle></subtitle>
-            <solution></solution>
+            <subtitle>coding question</subtitle>
+            <solution>function fun() {
+            dfkjdsf
+            }</solution>
         </question>
         <question>
             <subtitle></subtitle>
