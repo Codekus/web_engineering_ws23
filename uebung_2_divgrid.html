@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html {
+            background: #a9d7d1;
+            font-family: "Roboto", sans-serif;
+        }
+        form {
+            background: snow;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 25px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            margin: 25px;
+
+        }
+
+        input[type="text"] {
+            width: 200px;
+        }
+
+        #roles {
+            width: 100px;
+        }
+        #preference {
+            width: 125px;
+        }
+
+        .container-title {
+            text-align: right;
+        }
+
+        .input-options {
+            display: grid;
+
+            & input {
+                float: left;
+                margin-right: 8px;
+            }
+
+            & label {
+                margin-bottom: 7px;
+
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<h1 align="center">Survey Form</h1>
+<form >
+    <div align="center">Lets us know how we can improve freeCodeCamp</div>
+    <div class="container">
+        <label class="container-title">* Name:</label>
+        <input type="text" placeholder="Enter your name">
+    </div>
+    <div class="container">
+        <label class="container-title">* Email:</label>
+        <input type="text" placeholder="Enter your Email">
+    </div>
+    <div class="container">
+        <label class="container-title"> * Age:</label>
+        <input type="text" placeholder="Age">
+    </div>
+
+    <div class="container">
+        <label class="container-title"> Which option best describes your current role?</label>
+        <select id="roles">
+            <option label="student">student</option>
+            <option label="professor">professor</option>
+            <option label="employee">employee</option>
+        </select>
+    </div>
+    <div class="container">
+        <label class="container-title">How likely is it that you would recommend freeCodeCamp to a friend? </label>
+        <div class="input-options">
+            <label >
+                <input type="radio" name="recommend"> Definetely
+            </label>
+            <label >
+                <input type="radio" name="recommend"> Maybe
+            </label>
+            <label >
+                <input type="radio" name="recommend"> Not sure
+            </label>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <label class="container-title"> What do you like most in FCC</label>
+        <select id="preference">
+            <option label="Select an option">Select an option</option>
+            <option label="professor">professor</option>
+            <option label="employee">employee</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <label class="container-title"> Things that should be improved in the future (Check all that Apply):</label>
+
+        <div class="input-options">
+            <label >
+                <input type="checkbox" name="age"> Front-end Projects
+            </label>
+            <label >
+                <input type="checkbox" name="age"> Back-end Projects
+            </label>
+            <label >
+                <input type="checkbox" name="age"> Data Visualization
+            </label>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
