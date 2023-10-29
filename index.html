@@ -5,27 +5,51 @@
     <meta charset="utf8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Ü1.2</title>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            background: #FDFFF7FF;
+            min-height: 100vh;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        #main {
+            height: 100vh;
+        }
+
+
+    </style>
+
+    <script>
+        function loadSite() {
+            loadHeader();
+            loadSidebar();
+        }
+    </script>
 </head>
 
-<body>
-    <section>
-        <a href="uebung_1.html">Zu Übung 1</a>
-    </section>
-
-    <button onclick="another(this.textContent)">Uebung1</button>
-    <button onclick="appendToBody(htmlElement())"></button>
-    <button id="textid" data-content="exercises/uebung_1.xml" onclick="loadTextFile(this.getAttribute('data-content'))"></button>
-
-    <form action="uebung_template.html">
-        <p>
-            <label for="foo">Vorname:</label>
-            <input id="foo" type="text" name="exercise">
-        </p>
-        <button>Abschicken</button>
-        <button type="button">Was anderes</button>
-    </form>
-
-    <button data-content="exercises/uebung_1.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">read xml file</button>
+<body onload="loadSite()">
+    <div class="header"></div>
+    <div id="content">
+        <aside id="exercise-sidebar"></aside>
+        <main id="main">asdf</main>
+        <aside>asdf</aside>
+    </div>
 
     <script>
         function redirectToExercise(exercise) {

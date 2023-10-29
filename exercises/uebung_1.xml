@@ -70,13 +70,39 @@
         </question>
     </task>
 
+    <task type="task-text">
+        <title>1.4 Quiz zu HTML-Tags</title>
+        <question>
+            <subtitle>Was ist ein HTML-Tag</subtitle>
+            <solution>Ein Auszeichnungselement</solution>
+        </question>
+        <question>
+            <subtitle>Wofür nutzt man einen HTML-Tag?</subtitle>
+            <solution>Zur Strukturierung von Webseiteninhalten. Zur Einbettung weiterer Inhalte, die über Text hinausgehen</solution>
+        </question>
+        <question>
+            <subtitle>Woraus besteht ein HTML-Tag und wie setzt man ihn ein?</subtitle>
+            <solution>&lt;p&gt; Paragraph &lt;/p&gt;</solution>
+        </question>
+        <question>
+            <subtitle>Wer hat HTML erfunden?</subtitle>
+            <solution>Tim Berners-Lee</solution>
+        </question>
+        <question>
+            <subtitle>Zu welchem ursprünglichen Zweck wurde HTML erfunden?</subtitle>
+            <solution>für den Austausch wissenschaftlicher Publikationen</solution>
+        </question>
+        <question>
+            <subtitle>Wer arbeitet alles an der Weiterentwicklung von HTML?</subtitle>
+            <solution>das World Wide Web Consortium (W3C). die Web Hypertext Application Technology Working Group (WHATWG)</solution>
+        </question>
+    </task>
+
     <task type="task-code">
         <title></title>
         <question>
             <subtitle>coding question</subtitle>
-            <solution>function fun() {
-            dfkjdsf
-            }</solution>
+            <solution type="wireframe">uebung_2.html</solution>
         </question>
         <question>
             <subtitle></subtitle>

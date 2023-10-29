@@ -14,7 +14,7 @@ function loadXMLFile() {
             var xmlDoc = parser.parseFromString(data, 'text/xml');
 
             // immediately-invoked function expression IIFE
-            document.getElementById("content").appendChild((() => {
+            document.getElementById("main").appendChild((() => {
                 const header = document.createElement("h1");
                 header.innerHTML = xmlDoc.querySelector('exercise').textContent;
                 return header;
@@ -27,12 +27,12 @@ function loadXMLFile() {
                 textSection.appendChild(title)
                 for (var ques of questions) {
                     const question = createQuestionAndSolution(
-                        ques.querySelector("subtitle").textContent,
-                        ques.querySelector("solution").textContent
+                        ques.querySelector("subtitle"),
+                        ques.querySelector("solution")
                     )
                     textSection.appendChild(question)
                     textSection.appendChild(document.createElement("br"))
-                    document.getElementById("content").appendChild(textSection)
+                    document.getElementById("main").appendChild(textSection)
                 }
 
 
@@ -85,17 +85,23 @@ function createH1Title(text) {
  *     <div class="solution"> solutionText </div>
  * </div>
  */
-function createQuestionAndSolution(subTitleText, solutionText, subTitleNode, solutionNode) {
+function createQuestionAndSolution(subTitleText, solutionText) {
     const question = document.createElement("div")
     question.setAttribute("class", "question")
 
     const subtitle = document.createElement("div")
     subtitle.setAttribute("class", "subtitle")
-    subtitle.innerHTML = subTitleText
+    subtitle.innerHTML = subTitleText.textContent
+    var solution;
+    if (solutionText.getAttribute("type") === "wireframe") {
+        solution = document.createElement("iframe")
+        solution.setAttribute("src", solutionText.textContent)
+    } else {
+        solution = document.createElement("div")
+        solution.setAttribute("class", "solution")
+        solution.innerHTML = solutionText.textContent
+    }
 
-    const solution = document.createElement("div")
-    solution.setAttribute("class", "solution")
-    solution.innerHTML = solutionText
 
     question.appendChild(subtitle)
     question.appendChild(solution)

@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="scripts/read_xml.js"></script>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/sidebar.js"></script>
+        <script>
+            function loadSite() {
+                loadXMLFile();
+                loadHeader();
+                loadSidebar();
+            }
+
+
+        </script>
+        <link rel="stylesheet" href="styles/sidebar.css">
         <meta charset="UTF-8">
         <title>Title</title>
         <style>
             body {
                 margin: 0;
+                width: 100%;
+                min-height: 100vh;
+                background: #FDFFF7FF
             }
 
+
+            html {
+                width: 100%;
+                min-height: 100vh;
+            }
             #content {
-                margin: 10px;
-                padding-left: 15%;
-                padding-right: 15%;
+                display: flex;
+                height: 100%;
+            }
+
+            #main {
+                height: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                height: 600px;
             }
         </style>
     </head>
+
     <body onload="loadSite()">
-        <div class="header"></div>
+
+
+    <div class="header"></div>
+
         <div id="textid"></div>
 
         <!-- XML content will be inserted here -->
-        <section id="content">
+    <div id="content">
+        <aside id="exercise-sidebar"></aside>
+        <main id="main"></main>
+        <aside>asdf</aside>
+    </div>
 
-        </section>
 
     </body>
 
-<script src="scripts/read_xml.js"></script>
-<script src="scripts/header.js"></script>
-<script>
-    function loadSite() {
-        loadXMLFile();
-        loadHeader();
-    }
-</script>
+
 
 </html>
