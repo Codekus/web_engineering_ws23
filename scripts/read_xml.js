@@ -85,7 +85,7 @@ function createH1Title(text) {
  *     <div class="solution"> solutionText </div>
  * </div>
  */
-function createQuestionAndSolution(subTitleText, solutionText) {
+function createQuestionAndSolution(subTitleText, solutionText, subTitleNode, solutionNode) {
     const question = document.createElement("div")
     question.setAttribute("class", "question")
 
