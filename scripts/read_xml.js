@@ -2,7 +2,7 @@
  * will read XML File based on query Parameter, fetch nodes and generate
  * HTML code for exercise page
  */
-function loadXMLFile() {
+async function loadXMLFile() {
     const urlParams = new URLSearchParams(window.location.search);
 
     var filePath = urlParams.get("exercise");
@@ -20,9 +20,10 @@ function loadXMLFile() {
                 return header;
             })());
             var textTasks = xmlDoc.querySelectorAll("task")
+            var titleCount = 0;
             for (var task of textTasks) {
                 const textSection = createTaskSection(task.getAttribute("type"));
-                const title = createH1Title(task.querySelector("title").textContent)
+                const title = createH1Title(task.querySelector("title").textContent, "title-" + titleCount++)
                 const questions = task.querySelectorAll("question")
                 textSection.appendChild(title)
                 for (var ques of questions) {
@@ -68,9 +69,10 @@ function createCodeTextSection() {
  * @returns
  * <h1 class="title"> text </h1>
  */
-function createH1Title(text) {
+function createH1Title(text, id) {
     const title = document.createElement("h1")
     title.setAttribute("class", "title")
+    title.setAttribute("id", id)
     title.innerHTML = text
     return title;
 }

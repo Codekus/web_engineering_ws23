@@ -10,6 +10,9 @@
                 loadHeader();
                 loadSidebar();
             }
+            function redirectToExercise(exercise) {
+                window.location.href = 'uebung_template.html?exercise=' + exercise;
+            }
 
 
         </script>
@@ -54,7 +57,10 @@
 
         <!-- XML content will be inserted here -->
     <div id="content">
-        <aside id="exercise-sidebar"></aside>
+        <aside id="exercise-sidebar">
+            <div id="exercise-sidebar-btn-container">
+            </div>
+        </aside>
         <main id="main"></main>
         <aside>asdf</aside>
     </div>
