@@ -1,8 +1,4 @@
-function loadSidebar() {
-    generateSideBar()
 
-    //  document.getElementById("exercise-sidebar").style.height = "100vh";
-}
 
 function openNav() {
     if (window.screen.width > 400) {
@@ -22,7 +18,8 @@ function closeNav() {
 }
 
 
-function generateSideBar() {
+async function loadSidebar() {
+    await waitForElm('.title');
     var titles = document.getElementsByClassName("title");
     const sidebarContainer = document.getElementById("exercise-sidebar-btn-container")
     for (var title of titles) {
