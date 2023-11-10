@@ -3,6 +3,7 @@
 #exercise-sidebar {
     background: #a3d4c7;
     width: 10%;
+
 }
 
 #main{
@@ -23,6 +24,8 @@
     background: #f5eeed;
     transition: 0.5s;
 }
+
+
 
 @media (max-width: 400px) {
     #exercise-sidebar {
