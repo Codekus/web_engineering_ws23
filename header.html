@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="styles/header.css">
+
+<header>
+    <div class="navigation">
+
+        <div>
+            <button class="nav-button" id="menu-button" >Menü</button>
+            <button class="nav-button" id="home-button" onclick=" window.location.href = '/'">Startseite</button>
+            <div class="dropdown">
+                <button class="nav-button" id="exercises-button" onclick="">Übungen</button>
+                <div class="dropdown-content">
+                    <a data-content="exercises/uebung_1.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 1</a>
+                    <a data-content="exercises/uebung_2.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 2</a>
+                    <a data-content="exercises/uebung_3.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 3</a>
+                    <a data-content="exercises/uebung_4.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 4</a>
+                    <a data-content="exercises/uebung_5.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 5</a>
+                    <a data-content="exercises/uebung_6.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 6</a>
+                    <a data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 7</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <form id="searchform" onsubmit="fun()">
+                <input id="searchbar" type="text" placeholder="Suchen.." name="search">
+                <button id="search-button-desktop" class="search-button" type="submit">
+                    <img id="search-icon-desktop" class="search-icon" src="images/magnifying-glass-svgrepo-com.svg">
+                </button>
+            </form>
+        </div>
+        <button class="nav-button" id="settings-button">Einstellungen</button>
+    </div>
+</header>

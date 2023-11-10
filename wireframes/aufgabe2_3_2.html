@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      #img-container {
+        border: 1px solid black;
+        padding: 10px;
+        display: inline-block;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 0;
+      }
+
+      #img-checkbox:not(:checked) + div img{
+        opacity: 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      label {
+        position: absolute;
+        padding-left: 30px;
+        padding-top: 15px;
+
+      }
+
+      input {
+        width: 25px;
+        height: 25px;
+        padding-left: 40px;
+      }
+
+
+
+
+    </style>
+</head>
+<body>
+  <h1>Übung 2.2</h1>
+  <div>
+    <label for="img-checkbox">Hide and show via checkbox</label>
+    <input type="checkbox" id="img-checkbox" checked="true" >
+    <div id="img-container">
+      <img  src="https://kaul.inf.h-brs.de/ccm/we/ws23/resources/assets/h-brs.jpg" >
+    </div>
+  </div>
+</body>
+</html>

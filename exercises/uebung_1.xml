@@ -1,33 +1,136 @@
 <root>
-    <exercise>Übung 1</exercise>
-    <task type="Text">
+    <exercise>Übung 1: HTTP, URI und HTML</exercise>
+
+    <task type="task-text">
         <title>1.1 World Wide Web</title>
         <question>
-            <title>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</title>
+            <subtitle>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</subtitle>
             <solution>Das WWW Proposal wurde als vage bezeichnet. Das wurde aber mit der Evolvierbarkeit verwechselt.</solution>
         </question>
         <question>
-            <title>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von Tim Burners Lee abgelehnt?</title>
+            <subtitle>Was sind die fachlichen Argumente, warum das WWW dennoch ein Erfolg wurde?</subtitle>
             <solution>Das WWW wurde erfolgreich, da es die Möglichkeit bietet, verschiedene Technologien unabhängig voneinander zu entwickeln</solution>
         </question>
         <question>
-            <title>Was wäre der Preis für die garantierte Verhinderung von "broken links"?</title>
+            <subtitle>Was wäre der Preis für die garantierte Verhinderung von "broken links"?</subtitle>
             <solution>Einführung der referenziellen Integrität und regelmäßige Überwachung zur Sicherstellung der Link-Qualität sind erforderlich.</solution>
         </question>
     </task>
 
-    <task type="quiz">
+    <task type="task-text">
+        <title>1.2 HTTP</title>
         <question>
-            <title></title>
-            <solution></solution>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</subtitle>
+            <solution>HTTP Status Code 200 -> OK. Die Request wurde erfolgreich verarbeitet</solution>
         </question>
         <question>
-            <title></title>
-            <solution></solution>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 301. Was hat das zu bedeuten?</subtitle>
+            <solution>Der Zielressource wurde eine neue, permanente URL zugewiesen die für zukünftige Anfragen genutzt werden soll.</solution>
         </question>
         <question>
-            <title></title>
-            <solution></solution>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 400. Was hat das zu bedeuten? Was können Sie dagegen tun?</subtitle>
+            <solution>Die Request des Clients ist fehlerhaft</solution>
+        </question>
+        <question>
+            <subtitle>Sie bekommen im Browser den HTTP Status Code 403. Was hat das zu bedeuten? Was können Sie dagegen tun?</subtitle>
+            <solution>Client ist nicht authorisiert für diesen Zugriff</solution>
+        </question>
+        <question>
+            <subtitle>In einer Webanwendung benötigen Sie eine OPTIONS-Anfrage, die die Optionen des Servers vor dem eigentlichen Zugriff erfragen soll.
+                Aus Performancegründen soll die Abfrage aber cacheable sein. Wie könnten Sie dafür eine Lösung angehen?</subtitle>
+            <solution>Statt einer OPTIONS Request kann man eine GET Request versenden</solution>
+        </question>
+    </task>
+
+    <task type="task-text">
+        <title>1.3 Quiz zu HTML</title>
+        <question>
+            <subtitle>Was ist HTML?</subtitle>
+            <solution>eine Auszeichnungssprache</solution>
+        </question>
+        <question>
+            <subtitle>Wofür steht HTML?</subtitle>
+            <solution>Hypertext Markup Language</solution>
+        </question>
+        <question>
+            <subtitle>Wofür wird HTML eingesetzt?</subtitle>
+            <solution>für die Strukturierung digitaler Dokumente</solution>
+        </question>
+        <question>
+            <subtitle>Wer hat HTML erfunden?</subtitle>
+            <solution>Tim Berners-Lee</solution>
+        </question>
+        <question>
+            <subtitle>Zu welchem ursprünglichen Zweck wurde HTML erfunden?</subtitle>
+            <solution>für den Austausch wissenschaftlicher Publikationen</solution>
+        </question>
+        <question>
+            <subtitle>Wer arbeitet alles an der Weiterentwicklung von HTML?</subtitle>
+            <solution>das World Wide Web Consortium (W3C). die Web Hypertext Application Technology Working Group (WHATWG)</solution>
+        </question>
+    </task>
+
+    <task type="task-text">
+        <title>1.4 Quiz zu HTML-Tags</title>
+        <question>
+            <subtitle>Was ist ein HTML-Tag</subtitle>
+            <solution>Ein Auszeichnungselement</solution>
+        </question>
+        <question>
+            <subtitle>Wofür nutzt man einen HTML-Tag?</subtitle>
+            <solution>Zur Strukturierung von Webseiteninhalten. Zur Einbettung weiterer Inhalte, die über Text hinausgehen</solution>
+        </question>
+        <question>
+            <subtitle>Woraus besteht ein HTML-Tag und wie setzt man ihn ein?</subtitle>
+            <solution>&lt;p&gt; Paragraph &lt;/p&gt;</solution>
+        </question>
+        <question>
+            <subtitle>Wer hat HTML erfunden?</subtitle>
+            <solution>Tim Berners-Lee</solution>
+        </question>
+        <question>
+            <subtitle>Zu welchem ursprünglichen Zweck wurde HTML erfunden?</subtitle>
+            <solution>für den Austausch wissenschaftlicher Publikationen</solution>
+        </question>
+        <question>
+            <subtitle>Wer arbeitet alles an der Weiterentwicklung von HTML?</subtitle>
+            <solution>das World Wide Web Consortium (W3C). die Web Hypertext Application Technology Working Group (WHATWG)</solution>
+        </question>
+    </task>
+
+    <task type="task-text">
+        <title>1.6 HTML-Literatur lesen und Fragen beantworten</title>
+        <question>
+            <subtitle>Was ist HTML?</subtitle>
+            <solution>HTML ist die Standard Markup Sprache für Webseiten</solution>
+        </question>
+        <question>
+            <subtitle>Wie kann man eine geschachtelte geordnete Liste der Tiefe 3 erzeugen?</subtitle>
+            <solution>Man erstellt eine Nested List mit geschachelten <![CDATA[&lt;ul&gt;]]> Tags  </solution>
+        </question>
+        <question>
+            <subtitle>Wie ist eine HTML-Tabelle aufgebaut?</subtitle>
+            <solution>Tables beginnen mit dem Tag <![CDATA[&lt;table&gt;]]> . Zeilen haben den Tag <![CDATA[&lt;tr&gt;]]>  (Table Row) und Spalten für die Zeilen werden mit dem tag <![CDATA[&lt;th&gt;]]>  (Table Header) erstellt. Die Zeilen werden dann mit dem Tag <![CDATA[&lt;td&gt;]]>  (Table Data) gefüllt. </solution>
+        </question>
+        <question>
+            <subtitle>Welche Konventionen sollte man bei Pfaden und Dateinamen beachten?</subtitle>
+            <solution>Dateinamen sollten klein geschrieben, keine Leerzeichen und nur Buchstaben, Zahlen und Bindestriche/Unterstriche enthalten. Pfade die im Root Verzeichnis Starten sollen fangen mit "/" an und Pfade die im jetzigen Verzeichnis starten, beginnen mit "./"</solution>
+        </question>
+        <question>
+            <subtitle>Wie baut man in HTML ein Menü?</subtitle>
+            <solution>Menüs können mit dem <![CDATA[&lt;menu&gt;]]>  Tag erstellt werden</solution>
+        </question>
+        <question>
+            <subtitle>Welche Attribute sollte man bei Bildern wie verwenden?</subtitle>
+            <solution>Für Bild sollte die Attribute: src, alt und width/heigth nutzen. src beschreibt den Dateipfad des BIlder. alt ist ein Alternativnamen für das Bild, falls es nicht geladen werden konnte. height und width sind die Höhe und Breite des Bildes in Pixel</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>1.7 HTML-Wireframe</title>
+        <question>
+            <subtitle></subtitle>
+            <solution type="wireframe">wireframes/html-wireframe.html</solution>
         </question>
     </task>
 </root>

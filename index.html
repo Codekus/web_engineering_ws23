@@ -5,12 +5,59 @@
     <meta charset="utf8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Ü1.2</title>
+    <script src="scripts/header.js"></script>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            background: #FDFFF7FF;
+            min-height: 100vh;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        #main {
+            height: 100vh;
+        }
+
+
+    </style>
+
+    <script>
+        function loadSite() {
+            loadHeader();
+        }
+    </script>
 </head>
 
-<body>
-    <section>
-        <a href="uebung_1.html">Zu Übung 1</a>
-    </section>
+<body onload="loadSite()">
+    <div class="header"></div>
+    <div id="content">
+        <aside id="exercise-sidebar"></aside>
+        <main id="main">asdf</main>
+        <aside>asdf</aside>
+    </div>
+
+    <script>
+        function redirectToExercise(exercise) {
+            window.location.href = 'uebung_template.html?exercise=' + exercise;
+        }
+    </script>
+
 </body>
+
+
+<script src="scripts/read_xml.js"></script>
+<script src="scripts/more.js"></script>
 
 </html>

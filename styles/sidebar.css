@@ -1,0 +1,37 @@
+
+
+#exercise-sidebar {
+    background: #a3d4c7;
+    width: 10%;
+
+}
+
+#main{
+    transition: margin-left .5s;
+}
+
+#exercise-sidebar-btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#exercise-sidebar-btn-container a{
+    padding: 1em;
+
+}
+
+#exercise-sidebar-btn-container a:hover {
+    background: #f5eeed;
+    transition: 0.5s;
+}
+
+
+
+@media (max-width: 400px) {
+    #exercise-sidebar {
+
+
+    visibility: hidden;
+    }
+}
+

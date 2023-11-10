@@ -1,0 +1,63 @@
+<root>
+    <exercise>Übung 2: Cascading Style Sheets (CSS)</exercise>
+
+    <task type="task-text">
+        <title>CSS-Selektoren und CSS-Farben</title>
+        <question>
+            <subtitle>
+                <![CDATA[Berechnen Sie die Spezifität folgender CSS-Selektoren:<br /><br />
+            1. div div div:focus .inner <br />
+            2. h1 + div.main <br />
+            3. div a:link[href*='h-brs'] <br />
+            4. nav > a:hover::before <br />
+            5. ul#primary-nav li.active]]></subtitle>
+            <solution><![CDATA[
+            1. 0 2 3<br />
+            2. 0 1 2<br />
+            3. 0 2 2<br />
+            4. 0 1 3<br />
+            5. 1 1 2]]>
+            </solution>
+        </question>
+    </task>
+
+    <task type="task-text">
+        <title>CSS-Selektoren und CSS-Farben</title>
+        <question>
+            <subtitle><![CDATA[Rechnen Sie folgende RGB-Werte mit den DevTools des Webbrowsers in HSL-Werte um:<br /><br />
+
+    1. #ffffff<br />
+    2. #000<br />
+    3. #ab0978<br />
+    4. rgb(127,255,33)<br />
+    5. rgba(255,127,33,0.8)]]></subtitle>
+            <solution><![CDATA[
+                1. H:0, S:0%, L:100%, A:1<br />
+                2. H:0, S:0%, L:0%, A:1<br />
+                3. H:318, S:90%, L:35%, A:1<br />
+                4. H:95, S:100%, L:56%, A:1<br />
+                5. H:25, S:100%, L:56%, A:0.8]]> </solution>
+        </question>
+
+    </task>
+
+
+    <task type="task-code">
+        <title>CSS-Positionierung</title>
+        <question>
+            <subtitle><![CDATA[Bauen Sie das dynamische Verhalten in den folgenden beiden Videos exakt nach:<br /><br />
+
+                1. https://www.youtube.com/watch?v=PE3POxjDspo<br />
+                2. https://www.youtube.com/watch?v=HVmnv3k4__E<br /><br />
+
+                Arbeiten Sie in beiden Fällen nur mit HTML und CSS, ohne JavaScript.]]></subtitle>
+            <solution type="wireframe">wireframes/aufgabe2_3_1.html</solution>
+        </question>
+        <question>
+            <subtitle></subtitle>
+            <solution type="wireframe">wireframes/aufgabe2_3_2.html</solution>
+        </question>
+    </task>
+
+
+</root>

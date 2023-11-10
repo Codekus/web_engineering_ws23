@@ -1,0 +1,162 @@
+
+
+
+.nav-button {
+    margin-top: 6px;
+    background-color: #DDFFD4FF; /* Green */
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 75% ;
+    color: black;
+}
+
+
+
+#exercises-button {
+    margin-left: 5px;
+}
+#settings-button {
+    margin-right: 15px;
+}
+.nav-button:hover, #search-button-desktop:hover {
+    background-color:#a3d4c7;
+    transition: 0.7s;
+}
+
+.navigation {
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    background-color: #5b9093;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 50px;
+    position: fixed;
+
+}
+
+
+.search-icon {
+    height: auto;
+    width: 13px;
+    margin-bottom: 2px;
+}
+
+.search-container {
+    align-self: center;
+}
+
+
+#searchbar {
+    border: 3px solid #DDFFD4FF;
+    border-right: none;
+    padding: 5px;
+    height: 16pt;
+    border-radius: 10px 0 0 5px;
+    outline: none;
+    color: black;
+}
+
+#searchbar:focus{
+    color: black;
+}
+
+#search-button-desktop  {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #DDFFD4FF;
+    background: #DDFFD4FF;
+    text-align: center;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#searchform {
+    display: block;
+    text-align: center;
+}
+
+
+/* übungen hover */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+@media (max-width: 400px) {
+    #searchbar {
+        width: 70%;
+    }
+
+    #home-button, #exercises-button {
+        display: none;
+    }
+
+
+}
+
+#searchform {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+@media (min-width: 401px) {
+    #searchbar {
+        width: 80%;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}

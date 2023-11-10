@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="scripts/read_xml.js"></script>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/sidebar.js"></script>
+        <script src="scripts/util.js"></script>
+        <script>
+            async function loadSite() {
+
+                await loadXMLFile();
+                await loadHeader();
+                await loadSidebar();
+            }
+            function redirectToExercise(exercise) {
+                window.location.href = 'uebung_template.html?exercise=' + exercise;
+            }
+
+
+        </script>
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+
+            body {
+                margin: 0;
+                width: 100%;
+                min-height: 100vh;
+                background: #FDFFF7FF
+            }
+
+
+            html {
+                width: 100%;
+                min-height: 100vh;
+
+            }
+            #content {
+                display: flex;
+                height: 100%;
+            }
+
+            #main {
+                height: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                height: 600px;
+            }
+
+            #main-content {
+                padding-top: 60px;
+            }
+        </style>
+    </head>
+
+    <body onload="loadSite()">
+    <div class="header"></div>
+
+    <div id="main-content">
+        <div id="textid"></div>
+
+        <!-- XML content will be inserted here -->
+        <div id="content">
+            <aside id="exercise-sidebar">
+                <div id="exercise-sidebar-btn-container">
+                </div>
+            </aside>
+            <main id="main"></main>
+            <aside>asdf</aside>
+        </div>
+    </div>
+
+
+    </body>
+
+
+
+</html>
