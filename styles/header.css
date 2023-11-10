@@ -133,7 +133,15 @@
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 503px) {
+
+    html {
+        height: 100%;
+    }
+    body {
+        height: 100%;
+    }
+
     #searchbar {
         width: 70%;
     }
@@ -141,7 +149,26 @@
     #home-button, #exercises-button {
         display: none;
     }
+    #menu-button {
+        display: flex;
+    }
 
+    #menu-container {
+        background: yellow;
+        transition: 2.2s cubic-bezier(.36,-0.01,0,.77);
+    }
+
+    #menu-link-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #mobile-menu {
+        visibility: hidden;
+        height: 0;
+
+    }
 
 }
 
@@ -151,7 +178,7 @@
     position: relative;
 }
 
-@media (min-width: 401px) {
+@media (min-width: 504px) {
     #searchbar {
         width: 80%;
     }
@@ -159,4 +186,13 @@
     #menu-button {
         display: none;
     }
+
+    #mobile-menu {
+        display: none;
+        height: 100%;
+    }
+
+
+
+
 }
