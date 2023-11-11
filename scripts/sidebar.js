@@ -19,7 +19,7 @@ function closeNav() {
 
 
 async function loadSidebar() {
-    await waitForElm('.title');
+    await waitForElm('.title'); // wait until title is rendered
     var titles = document.getElementsByClassName("title");
     const sidebarContainer = document.getElementById("exercise-sidebar-btn-container")
     for (var title of titles) {
