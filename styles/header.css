@@ -1,8 +1,12 @@
 
 
+.nav-button-container {
+    height: 5vh;
+    display: flex;
+}
 
 .nav-button {
-    margin-top: 6px;
+
     background-color: #DDFFD4FF; /* Green */
     border: none;
     text-align: center;
@@ -13,7 +17,7 @@
     border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    height: 75% ;
+    height: 100% ;
     color: black;
 }
 
@@ -40,15 +44,10 @@
     flex-wrap: nowrap;
     height: 50px;
     position: fixed;
+    align-items: center;
 
 }
 
-
-.search-icon {
-    height: auto;
-    width: 13px;
-    margin-bottom: 2px;
-}
 
 .search-container {
     align-self: center;
@@ -59,7 +58,6 @@
     border: 3px solid #DDFFD4FF;
     border-right: none;
     padding: 5px;
-    height: 16pt;
     border-radius: 10px 0 0 5px;
     outline: none;
     color: black;
@@ -82,7 +80,7 @@
 }
 
 #searchform {
-    display: block;
+    display: flex;
     text-align: center;
 }
 
@@ -134,7 +132,7 @@
 
 
 
-@media (max-width: 503px) {
+@media (max-width: 550px) {
 
     html {
         height: 100%;
@@ -144,7 +142,7 @@
     }
 
     #searchbar {
-        width: 70%;
+        width: 15vh;
     }
 
     #home-button, #exercises-button {
@@ -159,7 +157,7 @@
     position: relative;
 }
 
-@media (min-width: 504px) {
+@media (min-width: 551px) {
     #searchbar {
         width: 80%;
     }

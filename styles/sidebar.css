@@ -25,9 +25,13 @@
     transition: 0.5s;
 }
 
+.exercise-jump {
+    border-bottom: 1px solid black;
+}
 
 
-@media (max-width: 503px) {
+
+@media (max-width: 550px) {
     #exercise-sidebar {
         visibility: hidden;
     }
