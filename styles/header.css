@@ -113,6 +113,7 @@
     display: block;
 
 
+
 }
 
 /* Change color of dropdown links on hover */
@@ -148,26 +149,6 @@
 
     #home-button, #exercises-button {
         display: none;
-    }
-    #menu-button {
-        display: flex;
-    }
-
-    #menu-container {
-        background: yellow;
-        transition: 2.2s cubic-bezier(.36,-0.01,0,.77);
-    }
-
-    #menu-link-container {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #mobile-menu {
-        visibility: hidden;
-        height: 0;
-
     }
 
 }

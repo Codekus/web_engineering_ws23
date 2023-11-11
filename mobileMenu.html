@@ -1,15 +1,21 @@
-<div id="menu-container">
-    <div id="menu-button-container">
-        <button id="menu-close-button" onclick="closeMenu()"></button>
-        <div id="menu-link-container">
-            <a href="/">Startseite</a>
-            <a data-content="exercises/uebung_1.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 1</a>
-            <a data-content="exercises/uebung_2.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 2</a>
-            <a data-content="exercises/uebung_3.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 3</a>
-            <a data-content="exercises/uebung_4.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 4</a>
-            <a data-content="exercises/uebung_5.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 5</a>
-            <a data-content="exercises/uebung_6.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 6</a>
-            <a data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 7</a>
-        </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="menu-button-container">
+    <a id="menu-close-button" onclick="closeMenu()">
+        <i class="fa fa-window-close" aria-hidden="true"></i>
+    </a>
+    <div id="menu-link-container">
+        <a id="home-a" href="/">Startseite</a>
+        <a class="exercise-link" data-content="exercises/uebung_1.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 1</a>
+        <a class="exercise-link" data-content="exercises/uebung_2.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 2</a>
+        <a class="exercise-link" data-content="exercises/uebung_3.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 3</a>
+        <a class="exercise-link" data-content="exercises/uebung_4.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 4</a>
+        <a class="exercise-link" data-content="exercises/uebung_5.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 5</a>
+        <a class="exercise-link" data-content="exercises/uebung_6.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 6</a>
+        <a class="exercise-link" data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 7</a>
+        <a class="exercise-link" data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 8</a>
+        <a class="exercise-link" data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 9</a>
+        <a class="exercise-link" data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 10</a>
+        <a class="exercise-link" data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 11</a>
+        <a class="exercise-link" data-content="exercises/uebung_7.xml" onclick="redirectToExercise(this.getAttribute('data-content'))">Übung 12</a>
     </div>
 </div>

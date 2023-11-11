@@ -19,9 +19,9 @@ function changeSearchbarVisibility() {
 function openMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
   //  document.getElementById("mobile-menu").style.display = "block";
-    mobileMenu.style.visibility = "visible"
     mobileMenu.style.width = "100%";
-    mobileMenu.style.height = "100%"
+    // overflow: hidden;
+    document.body.style.overflow = "hidden";
 
 }
 
@@ -29,8 +29,8 @@ function closeMenu() {
   //  document.getElementById("mobile-menu").style.display = "none";
 
     const mobileMenu = document.getElementById("mobile-menu");
-    mobileMenu.style.visibility = "hidden"
 
     mobileMenu.style.width = "0";
-    mobileMenu.style.height = "0"
+    document.body.style.overflow = "scroll";
 }
+
