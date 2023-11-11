@@ -1,0 +1,52 @@
+
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 100%;
+}
+#main > section {
+    margin-bottom: 20px;
+    font-family: 'Arial', monospace;
+}
+
+.task-text {
+    border: 1px solid black;
+
+}
+
+.task-text > * {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.question > * {
+    padding-bottom: 5px;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Courier New', monospace;
+}
+
+.title {
+    font-family: monospace;
+    text-decoration: underline;
+}
+
+html {
+
+}
+

@@ -81,10 +81,6 @@
             <solution>Zur Strukturierung von Webseiteninhalten. Zur Einbettung weiterer Inhalte, die über Text hinausgehen</solution>
         </question>
         <question>
-            <subtitle>Woraus besteht ein HTML-Tag und wie setzt man ihn ein?</subtitle>
-            <solution>&lt;p&gt; Paragraph &lt;/p&gt;</solution>
-        </question>
-        <question>
             <subtitle>Wer hat HTML erfunden?</subtitle>
             <solution>Tim Berners-Lee</solution>
         </question>
