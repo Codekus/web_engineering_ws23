@@ -1,0 +1,21 @@
+<root>
+    <exercise>Übung 5: Document Object Model (DOM)</exercise>
+
+    <task type="task-code">
+        <title>Performanz-Messungen von DOM-Operationen</title>
+        <question>
+            <subtitle>Performanz-Messungen von DOM-Operationen</subtitle>
+            <solution type="wireframe">wireframes/uebung_5_1_performance.html</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>Rednerliste mit Zeitmessung</title>
+        <question>
+            <subtitle>Rednerliste mit Zeitmessung</subtitle>
+            <solution type="wireframe">wireframes/uebung_5_2_rednerliste.html</solution>
+        </question>
+    </task>
+
+
+</root>

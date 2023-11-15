@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/scripts/uebung_5_1_performance.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px; /* Add some spacing at the top */
+            border-spacing: 0;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div id="textContainer">
+    <div id="innerHTML"></div>
+    <div id="innerText"></div>
+    <div id="textContent"></div>
+    <div id="outerHTML"></div>
+</div>
+<br>
+<button onclick="perfomanceLoad()">click for performance test</button>
+
+<div style="overflow-x:auto;">
+    <table>
+        <tr>
+            <th>innerHTML</th>
+            <th>innerText</th>
+            <th>textContent</th>
+            <th>outerHTML</th>
+        </tr>
+        <tr>
+            <td id="tdinnerHTML"></td>
+            <td id="tdinnerText"></td>
+            <td id="tdtextContent"></td>
+            <td id="tdouterHTML"></td>
+        </tr>
+    </table>
+</div>
+
+<div id="result"></div>
+
+</body>
+</html>
