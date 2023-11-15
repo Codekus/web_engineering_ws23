@@ -98,7 +98,24 @@ function createQuestionAndSolution(subTitleText, solutionText) {
     if (solutionText.getAttribute("type") === "wireframe") {
         solution = document.createElement("iframe")
         solution.setAttribute("src", solutionText.textContent)
-    } else {
+    } else if (solutionText.getAttribute("type") === "language-js") {
+        solution = document.createElement("div")
+        solution.setAttribute("class", "solution")
+
+        const pre = document.createElement("pre")
+        const code = document.createElement("code")
+        code.setAttribute("class", "language-js")
+        console.log("lmao")
+        fetch("./scripts/" + solutionText.textContent)
+            .then(response => response.text())
+            .then(data => {
+               code.textContent = data;
+            });
+        pre.appendChild(code)
+        solution.appendChild(pre)
+
+    }
+    else {
         solution = document.createElement("div")
         solution.setAttribute("class", "solution")
         solution.innerHTML = solutionText.textContent

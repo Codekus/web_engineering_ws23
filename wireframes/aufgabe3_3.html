@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      /* geht nur auf die direct child */
+
+      height: 100%;
+      margin: 0;
+
+      background: black;
+
+    }
+
+    html {
+      margin: 0;
+      height: 100%;
+    }
+
+    #header {
+      color: white;
+
+      display: grid;
+      grid-template-columns: repeat(8, 12.5%);
+      grid-template-rows: 100%;
+      align-items: center;
+      align-content: space-between;
+
+    }
+
+    #content {
+      background: antiquewhite;
+      height: 80%;
+    }
+
+    #footer {
+      align-content: center;
+      text-align: center;
+      align-self: center;
+
+    }
+
+    #footer > button {
+      justify-self: center;
+    }
+
+    #footer > div {
+      margin-top: 5vh;
+    }
+
+
+
+    img {
+      width: 50%;
+      height: auto;
+      grid-row: 1/3;
+      grid-column: 1;
+      margin-left: 50px;
+      border-radius: 20px;
+      border: 1px solid black;
+
+    }
+
+    #inner-content-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 80%;
+
+    }
+
+    #content-text-container {
+      display: grid;
+      grid-template-rows: repeat(4, 25%);
+      grid-template-columns: 100%;
+      grid-row: 1;
+      grid-column: 2;
+      text-align: center;
+      align-items: center;
+    }
+
+    button {
+      color: white;
+      background: orange;
+      width: fit-content;
+      padding: 5px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+
+    #content-text-container > * {
+      margin: 20px;
+      justify-self: center;
+    }
+
+    #header > * {
+
+
+    }
+
+    #book-series {
+      grid-column: 3;
+    }
+    #testimonials {
+      grid-column: 4;
+    }
+    #author {
+      grid-column: 5;
+    }
+    #resources {
+      grid-column: 6;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <a id="book-series">The book series</a>
+    <a id="testimonials">Testimonials</a>
+    <a id="author">The Author</a>
+    <a id="resources">Free resources</a>
+  </header>
+  <div id="content">
+    <h1 align="center">You dont know JavaScript</h1>
+    <div id="inner-content-container">
+      <img src="https://kaul.inf.h-brs.de/ccm/we/ws23/resources/assets/landing-img.png">
+      <div id="content-text-container">
+        <div>Dont' just drift through Javascript</div>
+        <div>Understand how JavaScript works</div>
+        <div>Start your journey through the bumpy side of JavaScript</div>
+        <button >ORDER YOUR COPY NOW</button>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div style="color: white">The first ebook in the series is absolutely free</div>
+    <button>FIND OUT MORE ABOUT THIS OFFER</button>
+  </footer>
+
+</body>
+</html>

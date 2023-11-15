@@ -1,0 +1,28 @@
+<root>
+    <exercise>Übung 3: Responsive Webdesign (RWD)</exercise>
+
+    <task type="task-code">
+        <title>Responsiv mit Flexbox und Desktop-First</title>
+        <question>
+            <subtitle>Implementieren Sie dann ausschließlich mit HTML, CSS und Flexbox das folgende Responsive Webdesign nach der Desktop-First-Strategie:</subtitle>
+            <solution type="wireframe">wireframes/aufgabe3_1.html</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>Responsiv mit Grid und Mobile-First</title>
+        <question>
+            <subtitle>mplementieren Sie dann das gleiche Responsive Webdesign wie zuvor in Aufgabe 3.1, allerdings diesmal mit Grid und der Mobile-First-Strategie.
+                Vermeiden Sie außerdem das Erscheinen von horizontalen Scrollbars so weit wie möglich. </subtitle>
+            <solution type="wireframe">wireframes/aufgabe3_2.html</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>Wireframe responsive mit Grid</title>
+        <question>
+            <subtitle>Implementieren Sie folgende Landing-Page responsiv mit Grid:</subtitle>
+            <solution type="wireframe">wireframes/aufgabe3_3.html</solution>
+        </question>
+    </task>
+</root>

@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
+
+
         <script src="scripts/read_xml.js"></script>
         <script src="scripts/header.js"></script>
         <script src="scripts/sidebar.js"></script>
         <script src="scripts/util.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
         <script>
+
+            $(function () {
+                loadSite();
+            });
+
+
+
             async function loadSite() {
 
                 await loadXMLFile();
                 await loadHeader();
                 await loadSidebar();
+                await applyCodeHighlight();
             }
+
             function redirectToExercise(exercise) {
                 window.location.href = 'uebung_template.html?exercise=' + exercise;
             }
+
+            async function applyCodeHighlight() {
+                setTimeout(hljs.highlightAll, 15);
+            }
+
+
 
 
         </script>
@@ -58,8 +80,12 @@
                 padding-top: 60px;
             }
         </style>
+
+
+        <!-- and it's easy to individually load additional languages -->
+
     </head>
-    <body onload="loadSite()">
+    <body >
 
     <div id="mobile-menu"></div>
     <div class="header"></div>

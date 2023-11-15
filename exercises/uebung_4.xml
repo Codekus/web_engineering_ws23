@@ -1,0 +1,50 @@
+<root>
+    <exercise>Übung 4: JavaScript (JS)</exercise>
+
+    <task type="task-code">
+        <title>Funktionen</title>
+        <question>
+            <subtitle><![CDATA[
+    Schreiben Sie folgende Funktionen in JavaScript:<br /><br />
+    1.Eine Funktion identity(), die ein Argument als Parameter entgegennimmt und dieses als Ergebnis zurückgibt.<br />
+    2.Eine Funktion identity_function(), die ein Argument als Parameter entgegennimmt und eine Funktion zurückgibt, die dieses Argument zurückgibt.<br />
+    3.Zwei binäre Funktionen add und mul, die Summe und Produkt berechnen.<br />
+    4.Eine Addierer-Funktion addf(), so dass addf(x)(y) genau x + y zurückgibt. (Es haben also zwei Funktionsaufrufe zu erfolgen. addf(x) liefert eine Funktion, die auf y angewandt wird.)<br />
+    5.Eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addf berechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.<br />
+
+]]></subtitle>
+            <solution type="language-js">uebung_4.js</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>Objekte</title>
+        <question>
+            <subtitle>Schreiben Sie die Prototypen Person und Auto in JavaScript, sodass jede Person weiß, welche Autos sie besitzt. Schreiben Sie eine Funktion conflict(), die feststellt, ob ein Auto von mehr als einer Person besessen wird. </subtitle>
+            <solution type="language-js">uebung_4_2.js</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>Fibonacci</title>
+        <question>
+            <subtitle>Schreiben Sie im Browser die Fibonacci-Funktion in JS und geben Sie die ersten 2000 Fibonacci-Zahlen 0,1,1,2,3,5,8,13,... auf der Konsole mit console.log() aus.
+                Achten Sie auf Performanz: Berechnen Sie jeden Fibonacci-Wert nur einmal. Speichern Sie zu diesem Zweck jede berechnete Fibonacci-Zahl in einer Tabelle.</subtitle>
+            <solution type="language-js">uebung_4_3.js</solution>
+        </question>
+
+        <question>
+            <subtitle>Was ist die größte Fibonacci-Zahl, die sich noch als Integer sicher speichern lässt (Number.MAX_SAFE_INTEGER)? Die wievielte Zahl in der Fibonacci-Folge ist das?</subtitle>
+            <solution>Die 79. Zahl -> 14472334024676220 (mit 0 based Indexing) ist die größte Zahl</solution>
+        </question>
+
+        <question>
+            <subtitle>Was ist die größte Fibonacci-Zahl, die sich noch als Number speichern lässt (Number.MAX_VALUE)? Die wievielte Zahl in der Fibonacci-Folge ist das?</subtitle>
+            <solution>Die 1478. Zahl ist die Zahl die größer als Number.MAX_VALUE ist.</solution>
+        </question>
+
+
+
+    </task>
+
+</root>
