@@ -35,14 +35,14 @@ function intToTimeStr(totalSeconds) {
     const seconds = totalSeconds % 60;
 
     return [
-        padZero(hours),
-        padZero(minutes),
-        padZero(seconds)
+        formatNumberToTime(hours),
+        formatNumberToTime(minutes),
+        formatNumberToTime(seconds)
     ].join(':');
 }
 
 // macht aus 5 -> 05
-function padZero(num) {
+function formatNumberToTime(num) {
     return num < 10 ? "0" + num : num;
 }
 function timerIncrement(timer) {
