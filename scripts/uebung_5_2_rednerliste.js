@@ -3,6 +3,7 @@
 
 function addRedner(name) {
     if(name === "") return
+    stopAllTimer()
     const redContainer = document.getElementById("rednerContainer");
     const newRedner = document.createElement("li");
 
@@ -10,6 +11,7 @@ function addRedner(name) {
     nameDiv.textContent = name;
 
     const timerDiv = document.createElement("div")
+    timerDiv.setAttribute("class", "timer")
     timerDiv.textContent = "00:00:00";
 
     const starBtn = document.createElement("button");
@@ -53,27 +55,42 @@ function timerIncrement(timer) {
 }
 
 function startTimer(button, timer) {
+    stopAllTimer(button)
     button.textContent = "Stop!";
 
     // intervalID damit man genau diese wieder stoppen kann
-    let intervalId = setInterval(function () {
+    button.intervalId = setInterval(function () {
         timerIncrement(timer);
     }, 1000);
 
     // der Button kriegt jetzt die stop Funktion als onClick event
     button.onclick = function () {
-        stopTimer(button, timer, intervalId);
+        stopTimer(button, timer);
     };
+
 }
 
-function stopTimer(button, timer, intervalId) {
+function stopTimer(button, timer) {
     button.textContent = "Start!";
 
     // damit wird der timer gestoppt
-    clearInterval(intervalId);
+    clearInterval(button.intervalId);
 
     // der Button kriegt jetzt die Start Funktion als onClick event
     button.onclick = function () {
-        startTimer(button, timer, intervalId);
+        startTimer(button, timer);
     };
+}
+
+function stopAllTimer(ignore) {
+    let liList = document.getElementsByTagName("li")
+
+    for (const li of liList) {
+        // ignoriert der button der nicht gestoppt, also gestartet werden soll
+        if (li === ignore) continue
+        const timer = li.querySelector(".timer")
+        const btn = li.querySelector("button")
+        stopTimer(btn, timer)
+
+    }
 }
