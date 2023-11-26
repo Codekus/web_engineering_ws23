@@ -51,6 +51,7 @@ html {
 }
 
 iframe {
-    resize: horizontal;
+    resize: both;
+    overflow: auto;
 }
 
