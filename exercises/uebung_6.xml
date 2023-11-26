@@ -1,0 +1,22 @@
+<root>
+    <exercise>Übung 6: ECMAScript (ES)</exercise>
+
+    <task type="task-code">
+        <title>Klammerpaare </title>
+        <question>
+            <subtitle><![CDATA[Schreiben Sie eine Webseite, in die man eine Zeichenkette mit beliebigen
+                Buchstaben, Zahlen und Sonderzeichen eingeben kann, die beliebig geschachtelte
+                Klammern [...], (...) und {...} enthält, sodass sofort geprüft wird, ob alle
+                Klammerpaare korrekt geschachtelt sind. Das Eingabefeld der Zeichenkette soll
+                rot gefärbt werden, wenn es ein Klammerpaar gibt, das falsch geschachtelt ist.
+                Verwenden Sie für Ihre Tests die Funktion console.assert.<br /><br />
+
+                Bonus: Verallgemeinern Sie Ihren Algorithmus, sodass man Klammerpaare als Parameter
+                frei definieren kann. Es müssen also nicht [...], (...) und {...} sein, sondern es
+                können auch andere Zeichen gewählt werden. ]]></subtitle>
+            <solution type="wireframe">wireframes/aufgabe_6_1.html</solution>
+        </question>
+    </task>
+
+
+</root>

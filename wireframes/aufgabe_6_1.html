@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Klammerpaare</title>
+    <script src="../scripts/aufgabe_6_1.js"></script>
+    <style>
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label > * {
+            margin-bottom: 1vh;
+        }
+    </style>
 </head>
 <body>
-
+    <label>Zu prüfenden Text abgeben:
+        <input type="text" id="input">
+        Falls du Klammerpaare selbst definieren willst,
+        gebe diese in diesem Format ein: x:y,a:c,...
+        die sich zwei schließenden Symbole müssen sich unterscheiden
+        Lasse dieses Feld frei für die Standard Klammerpaare
+        <input type="text" id="pattern">
+        <button type="button" onclick="evaluateTextField(
+            document.getElementById('input').value,
+            document.getElementById('pattern').value
+        )">Evaluieren</button>
+    </label>
 </body>
 </html>
