@@ -95,7 +95,7 @@ function createQuestionAndSolution(subTitleText, solutionText) {
     const subtitle = document.createElement("div")
     subtitle.setAttribute("class", "subtitle")
     subtitle.innerHTML = subTitleText.textContent
-    var solution;
+    let solution;
     if (solutionText.getAttribute("type") === "wireframe") {
         solution = document.createElement("iframe")
         solution.setAttribute("src", solutionText.textContent)

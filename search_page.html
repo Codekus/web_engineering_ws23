@@ -35,12 +35,11 @@
         }
     </style>
     <script>
-        async function loadSite() {
-            await loadHeader();
-        }
+
+
     </script>
 </head>
-<body onload="loadSite()">
+<body >
 <div id="mobile-menu"></div>
 <div class="header"></div>
 <div id="content">
@@ -55,6 +54,11 @@
     function redirectToExercise(exercise) {
         window.location.href = 'uebung_template.html?exercise=' + exercise;
     }
+
+    window.onload = async function() {
+        await loadHeader();
+        await search()
+    };
 </script>
 
 </body>
