@@ -1,0 +1,8 @@
+{
+  "name": "web_engineering_ws23",
+  "version": "1.0.0",
+  "dependencies": {
+    "jsdom": "^23.0.0",
+    "stopwords-de": "^0.3.0"
+  }
+}
