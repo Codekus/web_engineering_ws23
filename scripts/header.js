@@ -79,16 +79,17 @@ function search() {
         fetchPromises.push(promise);
     }
 
-    if (exercisesFound.size === 0) {
-        const main = document.getElementById("main")
-        main.innerHTML += (`
-            <p id="no-result"> Es wurden keine Ergebnisse für den Suchbegriff <b>"${keyword}"</b> gefunden </p>
-        `)
-        return true
-    }
+
 
     // Wait for all fetch operations to complete
     return Promise.all(fetchPromises).then(() => {
+        if (exercisesFound.size === 0) {
+            const main = document.getElementById("main")
+            main.innerHTML += (`
+            <p id="no-result"> Es wurden keine Ergebnisse für den Suchbegriff <b>"${keyword}"</b> gefunden </p>
+        `)
+            return true
+        }
         const container = document.querySelector("ul");
         exercisesFound.forEach((exercise, title) => {
             const liElement = document.createElement("li");

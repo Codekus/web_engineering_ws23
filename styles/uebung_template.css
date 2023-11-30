@@ -13,15 +13,18 @@
     font-family: 'Arial', monospace;
 }
 
-.task-text {
+.task-text, .task-code {
     border: 1px solid black;
 
 }
 
-.task-text > * {
+
+.task-text > *, .task-code > * {
     padding-left: 15px;
     padding-right: 5px;
 }
+
+
 
 .question {
     display: flex;
