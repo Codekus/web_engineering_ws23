@@ -64,7 +64,8 @@ function search() {
         "exercises/uebung_3.xml",
         "exercises/uebung_4.xml",
         "exercises/uebung_5.xml",
-        "exercises/uebung_6.xml"
+        "exercises/uebung_6.xml",
+        "exercises/uebung_7.xml"
     ]
     for (const ex of exercises) {
         const promise = fetch(ex, { mode: "cors" })
@@ -78,6 +79,14 @@ function search() {
         fetchPromises.push(promise);
     }
 
+    if (exercisesFound.size === 0) {
+        const main = document.getElementById("main")
+        main.innerHTML += (`
+            <p id="no-result"> Es wurden keine Ergebnisse für den Suchbegriff <b>"${keyword}"</b> gefunden </p>
+        `)
+        return true
+    }
+
     // Wait for all fetch operations to complete
     return Promise.all(fetchPromises).then(() => {
         const container = document.querySelector("ul");
@@ -85,7 +94,7 @@ function search() {
             const liElement = document.createElement("li");
             const aLink = document.createElement("a");
             aLink.setAttribute("data-content", title);
-            aLink.textContent = title;
+            aLink.textContent = exercise;
             aLink.onclick = function () {
                 redirectToExercise(this.getAttribute('data-content'));
             };
