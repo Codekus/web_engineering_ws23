@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+        html, body {
+            width: 100%;
+            margin: 0;
+        }
+
+        body {
+
+        }
+
+        header {
+            background: grey;
+        }
+
+        #header-button-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #header-button-container > button {
+            margin-right: 5vw;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #left-side {
+            width: 20%;
+        }
+
+        #right-side {
+            width: 20%;
+        }
+
+        #content {
+            width: 60%;
+            background: #f1f1f1;
+        }
+
+        #side-button-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #side-button-container > button{
+            margin-bottom: 10px;
+            width:  fit-content;
+        }
+    </style>
+</head>
+<body onload="readJson()">
+
+    <header>
+        <h1>WWW-Navigator</h1>
+        <div id="header-button-container">
+            <button onclick="load(this.textContent.toLowerCase())">HTML</button>
+            <button onclick="load(this.textContent.toLowerCase())">CSS</button>
+            <button onclick="load(this.textContent.toLowerCase())">JavaScript</button>
+        </div>
+    </header>
+
+    <main>
+        <aside id="left-side">
+            <div id="side-button-container">
+
+            </div>
+        </aside>
+        <section id="content">asdfadsf</section>
+        <aside id="right-side">
+            <div id="right-button-container">
+
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <a>Home</a>
+    </footer>
+</body>
+
+<script src="../scripts/uebung_8_3.js">
+
+</script>
+</html>
