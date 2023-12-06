@@ -7,6 +7,13 @@ async function readJson() {
     } catch (error) {
         console.error('Error fetching JSON:', error);
     }
+
+    const headerContainer = document.getElementById("header-button-container")
+    for (const btn in globalJsonData) {
+        headerContainer.innerHTML += `
+        <button class="header-button" onClick="load(this.textContent.toLowerCase())">${btn}</button>
+       `
+    }
 }
 
 async function load(text) {
@@ -31,9 +38,9 @@ async function load(text) {
             aSide.onclick = function() {
                 const innerData = globalJsonData[text][this.textContent]
                 sectionContent.textContent = innerData.content;
-
+                rightSideContainer.innerHTML = "";
                 for(const ref of (innerData.references)) {
-                    rightSideContainer.innerHTML = "";
+
                     const link = document.createElement("a")
                     link.textContent = ref
                     link.setAttribute("href", ref)
@@ -48,4 +55,6 @@ async function load(text) {
     document.querySelectorAll("#side-button-container > button").item(0).click()
     document.body.current = text
 }
+
+
 

@@ -1,7 +1,7 @@
 {
   "html": {
     "headings": {
-      "content": "Die Überschrift-Elemente bestehen aus sechs verschiedenen Levels. Das 'h1'-Element ist die Überschrift mit der höchsten Gewichtung und das 'h6'-Element mit der kleinsten. Ein Überschriften-Element beschreibt das Thema des Bereiches, welcher der Überschrift folgt. Überschriften können auch verwendet werden, um ein Inhaltsverzeichnis für ein Dokument automatisch zu erstellen.",
+      "content": "Die Überschrift-Elemente kldsfjgklsj bestehen aus sechs verschiedenen Levels. Das 'h1'-Element ist die Überschrift mit der höchsten Gewichtung und das 'h6'-Element mit der kleinsten. Ein Überschriften-Element beschreibt das Thema des Bereiches, welcher der Überschrift folgt. Überschriften können auch verwendet werden, um ein Inhaltsverzeichnis für ein Dokument automatisch zu erstellen.",
       "references": [
         "https://developer.mozilla.org/de/docs/Web/HTML/Element/h1-h6"
       ]
@@ -38,6 +38,22 @@
       "content": "Ein Objekt ist eine Sammlung von zusammenhängenden Daten und/oder Funktionalitäten. Diese bestehen üblicherweise aus verschiedenen Variablen und Funktionen, die Eigenschaften und Methoden genannt werden, wenn sie sich innerhalb von Objekten befinden.",
       "references": [
         "https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/Basics"
+      ]
+    }
+  },
+  "übung": {
+    "side1": {
+      "content": "Hier ist ein erster Text",
+      "references": [
+        "https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Funktionen",
+        "https://google.de"
+      ]
+    },
+    "side2": {
+      "content": "hier ist ein zweiter Text",
+      "references": [
+        "https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/Basics",
+        "https://google.de"
       ]
     }
   }

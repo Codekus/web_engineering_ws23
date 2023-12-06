@@ -16,7 +16,9 @@ async function loadXMLFile() {
             // immediately-invoked function expression IIFE
             document.getElementById("main").appendChild((() => {
                 const header = document.createElement("h1");
-                header.innerHTML = xmlDoc.querySelector('exercise').textContent;
+                const title = xmlDoc.querySelector('exercise').textContent;
+                document.title = title;
+                header.innerHTML =title
                 return header;
             })());
             var textTasks = xmlDoc.querySelectorAll("task")
@@ -39,6 +41,18 @@ async function loadXMLFile() {
 
 
             }
+    }).catch(() => {
+        const content = document.getElementById("content")
+        content.innerHTML = `
+            <section id="error-container">
+                <p>
+                    Diese Übung wurde nicht gefunden
+                </p> 
+                <button onclick="window.location.href = '/';">
+                    Zurück zur Startseite
+                </button>
+             </section>
+        `
     });
 }
 
