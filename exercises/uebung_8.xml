@@ -1,0 +1,42 @@
+<root>
+    <exercise>Übung 8: Asynchrones JavaScript</exercise>
+
+    <task type="task-code">
+        <title>Promises</title>
+        <question>
+            <subtitle> Erstellen Sie auf Ihrem lokalen Server (localhost) zwei Text-Dateien A.txt und B.txt
+                mit ungefähr gleich vielen Zeilen. Laden Sie mit der fetch-API parallel beide Text-Dateien vom Server.
+                Geben Sie auf einer Webseite den Inhalt beider Dateien zeilenweise aus, wobei der Anfang der Zeile aus
+                A.txt und das Ende aus B.txt stammen soll. Die beiden Dateien sollen also zeilenweise konkateniert werden.
+                Erzielen Sie max. Geschwindigkeit durch maximale Parallelität. Achten Sie gleichzeitig auf Korrektheit.
+                Verwenden Sie dabei ausschließlich die Promise-API ohne async/await.
+
+            </subtitle>
+            <solution type="wireframe">wireframes/uebung_8_1.html</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>async/await</title>
+        <question>
+            <subtitle>Lösen Sie die letzte Aufgabe mit async/await statt Promise.
+
+            </subtitle>
+            <solution type="wireframe">wireframes/uebung_8_2.html</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>WWW-Navigator</title>
+        <question>
+            <subtitle>Schreiben Sie einen Navigator für die Fachbegriffe des WWW zu den Oberthemen HTML, CSS und JavaScript.
+                Im Hauptmenü sollen diese 3 Oberthemen zur Auswahl stehen. Im Untermenü soll eine zugehörige Liste von Fachbegriffen
+                zum jeweiligen ausgewählten Oberthema stehen. In der Mitte soll eine Dokumentation zum ausgewählten Fachbegriff erscheinen.
+
+            </subtitle>
+            <solution type="wireframe">wireframes/uebung_8_3.html</solution>
+        </question>
+    </task>
+
+
+</root>

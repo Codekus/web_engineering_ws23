@@ -10,14 +10,30 @@
         html, body {
             width: 100%;
             margin: 0;
+            height: 100%;
+
         }
 
         body {
 
         }
+        html, body {
+            overflow: auto;
+        }
+        h1{
+            margin: 0;
+            color: white;
+            padding-bottom: 1vh;
+            margin-top: 1vh;
+        }
 
         header {
-            background: grey;
+            background: #1a274d;
+            padding-bottom: 2vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
         }
 
         #header-button-container {
@@ -32,30 +48,87 @@
         main {
             display: flex;
             flex-direction: row;
+            overflow-x: hidden;
+            height: 100%;
         }
 
         #left-side {
-            width: 20%;
+            width: 12.5%;
         }
 
         #right-side {
-            width: 20%;
+            width: 12.5%;
+        }
+
+        #right-side, #left-side {
+            background: antiquewhite;
+        }
+
+        section {
+            background: ghostwhite;
+        }
+
+        #right-side, #left-side, section {
+            padding-top: 1vh;
+
         }
 
         #content {
-            width: 60%;
-            background: #f1f1f1;
+            width: 75%;
+            padding-left: 1vw;
+            font-size: large;
         }
 
         #side-button-container {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
+            margin-left: 2vh;
         }
 
         #side-button-container > button{
             margin-bottom: 10px;
             width:  fit-content;
         }
+
+        button {
+
+            display: inline-block;
+            outline: 0;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 4px;
+            font-size: 13px;
+            height: 30px;
+            background-color: #9147ff;
+            color: white;
+            padding: 0 10px;
+            :hover {
+                background-color: #772ce8;
+            }
+
+        }
+
+        .header-button {
+            font-size: large;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+            background: black;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        footer > a {
+            color: white;
+
+        }
+
     </style>
 </head>
 <body >
@@ -63,9 +136,9 @@
     <header>
         <h1>WWW-Navigator</h1>
         <div id="header-button-container">
-            <button onclick="load(this.textContent.toLowerCase())">HTML</button>
-            <button onclick="load(this.textContent.toLowerCase())">CSS</button>
-            <button onclick="load(this.textContent.toLowerCase())">JavaScript</button>
+            <button class="header-button" onclick="load(this.textContent.toLowerCase())">HTML</button>
+            <button class="header-button" onclick="load(this.textContent.toLowerCase())">CSS</button>
+            <button class="header-button" onclick="load(this.textContent.toLowerCase())">JavaScript</button>
         </div>
     </header>
 
@@ -84,7 +157,7 @@
     </main>
 
     <footer>
-        <a>Home</a>
+        <a href="/">Home</a>
     </footer>
 </body>
 

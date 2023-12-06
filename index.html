@@ -32,6 +32,20 @@
 
         #main {
             height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        section {
+            margin-top: 65px;
+            width: 75%;
+        }
+
+        section > p {
+            font-size: large;
         }
 
 
@@ -50,9 +64,34 @@
     <div id="mobile-menu"></div>
     <div class="header"></div>
     <div id="content">
-        <aside id="exercise-sidebar"></aside>
-        <main id="main"></main>
-        <aside></aside>
+        <main id="main">
+            <section>
+                <h1>Solution-Navigator Einführung</h1>
+
+                <p>
+                    Herzlich willkommen auf meinem Solution-Navigator! Diese Webseite präsentiert umfassend
+                    meine individuellen Lösungen für die verschiedenen Übungsaufgaben, die im Rahmen der Veranstaltung: 'Einführung in
+                     Web-Engineering' behandelt wurden. Die Webseite wurde ausschließlich unter Verwendung von Vanilla
+                    JavaScript, CSS und HTML erstellt. Für das Einbinden von Code-Highlighting kam 'Highlight.js' zum Einsatz.
+                    <br/><br/>
+                    Eine Besonderheit dieses Solution-Navigators liegt in der dynamischen Erstellung der Lösungsseiten.
+                    Die Lösungen werden aus einer XML-Datei geladen, wobei anschließend überprüft wird, ob es sich um eine
+                    Coding- oder Textaufgabe handelt. Diese Differenzierung ist entscheidend, um die entsprechenden HTML-Klassen
+                    zu setzen und das korrekte Styling anzuwenden.
+                    <br/><br/>
+                </p>
+
+                <h1>Navigation zu den Übungen</h1>
+
+                <p>
+                    Um zu den Übungen zu navigieren kann der Hover Button im Header benutzt werden oder alternativ kann die Suche
+                    verwendet werden. In der Suche wird der Inhalt jeder Übung durchsucht, falls das Suchwort gefunden wurde wird eine
+                    Verlinkung zu der Übung erstellt. Bei keinem gefundenen Ergebnis wird ein entsprechender Text ausgegeben. Sollte
+                    versucht werden eine leere Suche auszuführen, so wird eine Fehlermeldung ausgegeben
+                </p>
+                <a href="https://github.com/Codekus/web_engineering_ws23" target="_blank">Github Repository dieser Webseite</a>
+            </section>
+        </main>
     </div>
 
     <script>

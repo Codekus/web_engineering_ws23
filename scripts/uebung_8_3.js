@@ -3,8 +3,7 @@ let globalJsonData;
 async function readJson() {
     try {
         const res = await fetch('../resources/uebung_8_3.json');
-        globalJsonData = await res.json(); // Assign the JSON data to the global variable
-        console.log(globalJsonData)
+        globalJsonData = await res.json();
     } catch (error) {
         console.error('Error fetching JSON:', error);
     }
