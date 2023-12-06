@@ -10,8 +10,11 @@ async function readJson() {
     }
 }
 
-function load(text) {
+async function load(text) {
     if(text === document.body.current) return
+    if(globalJsonData === undefined || globalJsonData === null) {
+        await readJson()
+    }
     const data = globalJsonData[text]
     const leftSideContainer = document.getElementById("side-button-container")
     const sectionContent = document.getElementById("content")
