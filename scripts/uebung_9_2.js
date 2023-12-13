@@ -37,7 +37,7 @@ async function loadChart() {
         document.querySelector("svg").innerHTML +=`
             <text x="${5}" y="${startHeight}" font-size="10" fill="black">${key}</text>
             <line x1="${barOffset}" y1="${startHeight-3}" x2="${value+barOffset}" y2="${startHeight-3}" stroke="black" stroke-width="5"/>
-            <text x="${value+barOffset + 15}" y="${startHeight}" font-size="10" fill="black">${Math.round(value * 100) / 100
+            <text x="${value+barOffset + 15}" y="${startHeight}" font-size="10" fill="black">${Math.round((value*1000) * 100) / 100
         }</text>
         `
         startHeight += 25
