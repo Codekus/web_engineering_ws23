@@ -11,15 +11,17 @@ async function loadHeader() {
 
     await waitForElm("#searchform")
 
-    document.getElementById('searchform').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevents the form from submitting traditionally
-        const searchbar = document.getElementById("searchbar")
-        if (searchbar.value === "") {
-            searchbar.style.background = "#ffe6e6"
-            searchbar.setAttribute("placeholder", "Leere Suche nicht möglich")
-            return
-        }
-        this.submit();
+    document
+        .getElementById('searchform')
+        .addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the form from submitting traditionally
+            const searchbar = document.getElementById("searchbar")
+            if (searchbar.value === "") {
+                searchbar.style.background = "#ffe6e6"
+                searchbar.setAttribute("placeholder", "Leere Suche nicht möglich")
+                return
+            }
+            this.submit();
     });
 
 }
