@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        svg {
+            border: 1px solid #333;
+        }
+
+        rect {
+            stroke: #333;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        /* enabled svg click event */
+        svg {
+            pointer-events: all;
+        }
+    </style>
+
 </head>
 <body>
+<svg width="300" height="300">
+    <!-- Vertical Lines -->
+    <rect onclick="rectClicked(this)" x="0" y="0" width="100" height="100"/>
+    <rect onclick="rectClicked(this)" x="100" y="0" width="100" height="100"/>
+    <rect onclick="rectClicked(this)" x="200" y="0" width="100" height="100"/>
 
+    <rect onclick="rectClicked(this)" x="0" y="100" width="100" height="100"/>
+    <rect onclick="rectClicked(this)" x="100" y="100" width="100" height="100"/>
+    <rect onclick="rectClicked(this)" x="200" y="100" width="100" height="100"/>
+
+    <rect onclick="rectClicked(this)" x="0" y="200" width="100" height="100"/>
+    <rect onclick="rectClicked(this)" x="100" y="200" width="100" height="100"/>
+    <rect onclick="rectClicked(this)" x="200" y="200" width="100" height="100"/>
+</svg>
 </body>
+<script src="../scripts/uebung_9_3.js" defer></script>
 </html>
