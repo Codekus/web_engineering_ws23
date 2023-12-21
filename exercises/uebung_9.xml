@@ -1,0 +1,38 @@
+<root>
+    <exercise>Übung 9: Scalable Vector Graphics (SVG)</exercise>
+
+    <task type="task-code">
+        <title>SVG Grafik von Hand erstellen</title>
+        <question>
+            <subtitle> Codieren Sie eine HTML-Datei mit Inline SVG:
+
+            </subtitle>
+            <solution type="wireframe">wireframes/aufgabe_9_1.html</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>Statistik-Balkendiagramm in SVG</title>
+        <question>
+            <subtitle>Implementieren Sie ein eigenes Balkendiagramm mit HTML,
+                Inline SVG, CSS und JavaScript. Geben Sie die Daten für das Balkendiagramm
+                im JSON-Format vor. Nehmen Sie als Beispieldaten Marktdaten von der Bundesnetzagentur.
+                Animieren Sie die Grafik (siehe z.B. Highchart Bar Chart).
+
+            </subtitle>
+            <solution type="wireframe">wireframes/aufgabe_9_2.html</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>Tic-Tac-Toe</title>
+        <question>
+            <subtitle>Implementieren Sie das Spiel Tic-Tac-Toe als HTML-Datei mit Inline SVG, CSS und JS.
+
+            </subtitle>
+            <solution type="wireframe">wireframes/uebung_9_3.html</solution>
+        </question>
+    </task>
+
+
+</root>
