@@ -141,11 +141,3 @@ function createQuestionAndSolution(subTitleText, solutionText) {
     question.appendChild(solution)
     return question
 }
-
-function another(text) {
-    alert(text)
-}
-
-function fun() {
-    alert("function fun")
-}

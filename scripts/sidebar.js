@@ -1,22 +1,5 @@
 
 
-function openNav() {
-    if (window.screen.width > 400) {
-        //    document.getElementById("exercise-sidebar").style.width = "250px";
-        //    document.getElementById("main").style.marginLeft = "250px";
-    } else {
-        //    document.getElementById("exercise-sidebar").style.width = "100%";
-    }
-    //document.getElementById("exercise-sidebar").style.visibility = "visible";
-
-}
-
-function closeNav() {
-    //  document.getElementById("exercise-sidebar").style.width = "0";
-    //  document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("exercise-sidebar").style.visibility = "hidden";
-}
-
 
 async function loadSidebar() {
     await waitForElm('.title'); // wait until title is rendered
