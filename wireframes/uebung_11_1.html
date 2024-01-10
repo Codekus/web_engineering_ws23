@@ -19,8 +19,6 @@
 
 <script>
   function send(name) {
-    console.log("called")
-    console.log(name)
     fetch(`http://127.0.0.1:3001/?name=${name}`).then(req => req.json()).then(data => {
         if(data.name) {
             document.getElementById("header").textContent = data.name
