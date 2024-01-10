@@ -7,6 +7,7 @@
     margin-left: 5%;
     margin-right: 10%;
     width: 100%;
+    overflow-x: hidden;
 }
 #main > section {
     margin-bottom: 20px;
@@ -89,5 +90,21 @@ iframe {
 #error-container > button:hover {
     transition: all .1s ease;
     box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+
+@media (max-width: 550px) {
+    #exercise-sidebar {
+        display: none;
+        visibility: hidden;
+    }
+
+    #main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h1 {
+        align-self: center;
+    }
 }
 
