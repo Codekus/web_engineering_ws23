@@ -70,7 +70,8 @@ function search() {
         "exercises/uebung_7.xml",
         "exercises/uebung_8.xml",
         "exercises/uebung_9.xml",
-        "exercises/uebung_10.xml"
+        "exercises/uebung_10.xml",
+        "exercises/uebung_11.xml"
     ]
     for (const ex of exercises) {
         const promise = fetch(ex, { mode: "cors" })

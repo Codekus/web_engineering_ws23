@@ -1,0 +1,26 @@
+<root>
+    <exercise>Übung 11: NodeJS</exercise>
+
+
+    <task type="task-code">
+        <title>Lokaler Webserver mit NodeJS</title>
+        <question>
+            <subtitle> Erstellen Sie einen lokalen Webserver mit NodeJS.
+                Reichen Sie als Lösung den JS-Code Ihrer server.js ein.
+                Der Webserver soll über eine Schnittstelle verfügen,
+                an die ein Client einen Namen senden kann und als Ergebnis
+                dann mit einem Gruß antwortet. Beispiel: Der Client sendet "Mika"
+                und der Server antwortet mit "Hallo Mika!".
+            </subtitle>
+            <solution type="language-js">node_server/server.js</solution>
+        </question>
+
+        <question>
+            <subtitle>
+            </subtitle>
+            <solution type="wireframe">wireframes/uebung_11_1.html</solution>
+        </question>
+    </task>
+
+
+</root>
