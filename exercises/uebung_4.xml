@@ -13,7 +13,7 @@
     5.Eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addf berechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.<br />
 
 ]]></subtitle>
-            <solution type="language-js">uebung_4.js</solution>
+            <solution type="language-js">./scripts/uebung_4.js</solution>
         </question>
     </task>
 
@@ -21,7 +21,7 @@
         <title>Objekte</title>
         <question>
             <subtitle>Schreiben Sie die Prototypen Person und Auto in JavaScript, sodass jede Person weiß, welche Autos sie besitzt. Schreiben Sie eine Funktion conflict(), die feststellt, ob ein Auto von mehr als einer Person besessen wird. </subtitle>
-            <solution type="language-js">uebung_4_2.js</solution>
+            <solution type="language-js">./scripts/uebung_4_2.js</solution>
         </question>
     </task>
 
@@ -30,7 +30,7 @@
         <question>
             <subtitle>Schreiben Sie im Browser die Fibonacci-Funktion in JS und geben Sie die ersten 2000 Fibonacci-Zahlen 0,1,1,2,3,5,8,13,... auf der Konsole mit console.log() aus.
                 Achten Sie auf Performanz: Berechnen Sie jeden Fibonacci-Wert nur einmal. Speichern Sie zu diesem Zweck jede berechnete Fibonacci-Zahl in einer Tabelle.</subtitle>
-            <solution type="language-js">uebung_4_3.js</solution>
+            <solution type="language-js">./scripts/uebung_4_3.js</solution>
         </question>
 
         <question>

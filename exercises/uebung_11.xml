@@ -12,7 +12,7 @@
                 dann mit einem Gruß antwortet. Beispiel: Der Client sendet "Mika"
                 und der Server antwortet mit "Hallo Mika!".
             </subtitle>
-            <solution type="language-js">node_server/server.js</solution>
+            <solution type="language-js">./scripts/node_server/server.js</solution>
         </question>
 
         <question>

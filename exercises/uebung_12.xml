@@ -1,0 +1,20 @@
+<root>
+    <exercise>Übung 12: Server-side Scripting (PHP)</exercise>
+
+
+    <task type="task-code">
+        <title>Registrierung mit PHP</title>
+        <question>
+            <subtitle> Erstellen Sie mit PHP ein Registrierungsformular.
+                Speichern Sie die eingegebenen Daten persistent in einer Datei.
+                Schreiben Sie Ihre PHP-Scripte so,
+                dass es dabei zu keinen Nebenläufigkeitsartefakten (z.B. Lost Update)
+                kommen kann, egal wie viele Nutzer sich gleichzeitig registrieren.
+            </subtitle>
+            <solution type="language-php">./php/register.php</solution>
+        </question>
+
+    </task>
+
+
+</root>

@@ -113,7 +113,7 @@ function createQuestionAndSolution(subTitleText, solutionText) {
     if (solutionText.getAttribute("type") === "wireframe") {
         solution = document.createElement("iframe")
         solution.setAttribute("src", solutionText.textContent)
-    } else if (solutionText.getAttribute("type") === "language-js") {
+    } else if (solutionText.getAttribute("type") === "language-js" || solutionText.getAttribute("type") === "language-php") {
         solution = document.createElement("div")
         solution.setAttribute("class", "solution")
 
@@ -121,7 +121,7 @@ function createQuestionAndSolution(subTitleText, solutionText) {
         const code = document.createElement("code")
         code.setAttribute("class", "language-js")
         console.log("lmao")
-        fetch("./scripts/" + solutionText.textContent)
+        fetch(solutionText.textContent)
             .then(response => response.text())
             .then(data => {
                code.textContent = data;

@@ -1,4 +1,5 @@
-<?php
+<!?php
+// remove the "!" before the php tags, if you want to run the script
 
 $jsonFilePath = 'user_data.json';
 
@@ -43,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo 'Registration successful! User data has been saved.';
 }
-?>
+?!>
 
 
 <!DOCTYPE html>

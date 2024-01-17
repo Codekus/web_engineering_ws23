@@ -8,7 +8,7 @@
             <subtitle>Implementieren Sie das Spiel Tic-Tac-Toe als HTML-Datei mit Inline SVG, CSS und JS.
 
             </subtitle>
-            <solution type="language-js">server.ts</solution>
+            <solution type="language-js">./scripts/server.ts</solution>
         </question>
     </task>
 

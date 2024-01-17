@@ -26,7 +26,7 @@
     <br /><br />my_vector.get(0); // 7
     <br /><br />my_vector.get(1); // 8
 ]]></subtitle>
-            <solution type="language-js">uebung_7_1.js</solution>
+            <solution type="language-js">./scripts/uebung_7_1.js</solution>
         </question>
     </task>
 
@@ -37,7 +37,7 @@
 Schreiben Sie in JavaScript eine Textanalyse. Ermitteln Sie die häufigsten Begriffe im Text Plagiatsresolution.
 Filtern Sie dabei alle Stoppworte und HTML-Tags. Reduzieren Sie das Ergebnis auf die 3 häufigsten Begriffe.
 ]]></subtitle>
-            <solution type="language-js">uebung_7_2.js</solution>
+            <solution type="language-js">./scripts/uebung_7_2.js</solution>
         </question>
     </task>
 
