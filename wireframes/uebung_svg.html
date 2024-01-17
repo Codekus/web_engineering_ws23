@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Square Example</title>
+
+    <style>
+        #btn-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<svg width="500" height="100">
+    <rect id="svg-rotate" x="0" width="80" height="80" fill="blue" stroke="black" stroke-width="2"/>
+    <rect id="svg-scale" x="100" width="80" height="80" fill="red" stroke="black" stroke-width="2"/>
+    <rect id="svg-translate" x="250" width="80" height="80" fill="green" stroke="black" stroke-width="2"/>
+
+</svg>
+
+<div id="btn-container">
+    <button id="rotate" onclick="rotoate()">SVG Rotieren</button>
+    <button id="bigger" onclick="bigger()">SVG Vergrößern</button>
+    <button id="smaller" onclick="smaller()">SVG Verkleinern</button>
+    <button id="move-right" onclick="translateRight()">SVG nach Rechts bewegen</button>
+    <button id="move-left" onclick="translateLeft()">SVG nach Links bewegen</button>
+</div>
+
+</body>
+
+<script src="../scripts/svg_rotate_translate_scale.js" defer></script>
+</html>

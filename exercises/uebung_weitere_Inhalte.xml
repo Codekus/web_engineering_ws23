@@ -1,0 +1,32 @@
+<root>
+    <exercise>Weitere JavaScript Beispiele</exercise>
+
+
+    <task type="task-code">
+        <title>Spread Operator in JS</title>
+        <question>
+            <subtitle> Der Spread-Operator (...) in JavaScript wird verwendet, um Arrays,
+                Objekte, Maps und Sets zu kopieren und zu kombinieren.
+                Durch Verwendung des Spread-Operators können Sie schnell und
+                einfach neue Arrays oder Objekte erstellen, indem Sie die Elemente
+                eines bestehenden Arrays oder die Eigenschaften eines bestehenden Objekts
+                in ein neues übertragen. Dies ermöglicht eine effiziente und elegante Möglichkeit,
+                Datenstrukturen zu manipulieren und zu erweitern.
+            </subtitle>
+            <solution type="language-js">./scripts/spread_operator.js</solution>
+        </question>
+
+    </task>
+
+    <task type="task-code">
+        <title>SVG Transform -> Rotate, Scale, Translate</title>
+        <question>
+            <subtitle> Hier ein Wireframe für eine kurze Demonstration von den SVG "transform" Attributen: 'rotate', 'scale' und 'translate'
+            </subtitle>
+            <solution type="wireframe">wireframes/uebung_svg.html</solution>
+        </question>
+
+    </task>
+
+
+</root>
