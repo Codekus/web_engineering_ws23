@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     if ($password !== $confirmPassword) {
-        echo 'Password do not match';
+        echo 'Passwords do not match';
         return;
     }
 
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     file_put_contents($jsonFilePath, $jsonData);
 
-    echo 'Registration successful! User data has been saved.';
+    echo 'Registration successful!';
 }
 ?!>
 
