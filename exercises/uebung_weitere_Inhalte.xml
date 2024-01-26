@@ -28,5 +28,48 @@
 
     </task>
 
+    <task type="task-code">
+        <title>ECMASCRIPT Module product.js</title>
+        <question>
+            <subtitle> Kurzes Einführunsbeispiel für ECMASCRIPT Module
+            </subtitle>
+            <solution type="language-js">./scripts/product.js</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>ECMASCRIPT Module shoppingCart.js</title>
+        <question>
+            <subtitle>
+            </subtitle>
+            <solution type="language-js">./scripts/shoppingCart.js</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>ECMASCRIPT Module app.js</title>
+        <question>
+            <subtitle>
+            </subtitle>
+            <solution type="language-js">./scripts/app.js</solution>
+        </question>
+    </task>
+
+    <task type="task-code">
+        <title>HTML Wireframe für mit ECMASCRIPT Modulen</title>
+        <question>
+            <subtitle>Hier sind die Produkt Instanzen die in der Datei 'app.js' erstellt wurden.
+                ECMASCRIPT Module werden verwendet,
+                um JavaScript-Code in separate Dateien zu organisieren und wiederverwendbare Module zu erstellen.
+                Sie ermöglichen die Aufteilung von Code in kleine Teile, verbessern die Struktur und unterstützen
+                den sicheren Datenaustausch zwischen verschiedenen Teilen einer Anwendung.
+                Dies fördert die Wartbarkeit und Skalierbarkeit von JavaScript-Projekten.
+            </subtitle>
+            <solution type="wireframe">./wireframes/ecma_module.html</solution>
+        </question>
+    </task>
+
+
+
 
 </root>
