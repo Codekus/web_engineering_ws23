@@ -1,1 +1,1 @@
-# web_engineering_ws23 By mklass2s
+# web_engineering_ws23 By mklass2s - Markus Klassen
