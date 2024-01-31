@@ -26,7 +26,7 @@ async function loadXMLFile() {
             var titleCount = 0;
             for (var task of textTasks) {
                 const textSection = createTaskSection(task.getAttribute("type"));
-                const title = createH1Title(task.querySelector("title").textContent, "title-" + titleCount++)
+                const title = createH1Title(task.querySelector("title"), "title-" + titleCount++)
                 const questions = task.querySelectorAll("question")
                 textSection.appendChild(title)
                 for (var ques of questions) {
@@ -81,14 +81,17 @@ function createCodeTextSection() {
 /**
  *
  * @param text
+ * @param id
  * @returns
  * <h1 class="title"> text </h1>
  */
 function createH1Title(text, id) {
     const title = document.createElement("h1")
+
     title.setAttribute("class", "title")
     title.setAttribute("id", id)
-    title.innerHTML = text
+    title.innerHTML = text.textContent
+
     return title;
 }
 
@@ -109,10 +112,28 @@ function createQuestionAndSolution(subTitleText, solutionText) {
     const subtitle = document.createElement("div")
     subtitle.setAttribute("class", "subtitle")
     subtitle.innerHTML = subTitleText.textContent
+
+
     let solution;
+    // wireframe / iframe lösung wird eingebettet
     if (solutionText.getAttribute("type") === "wireframe") {
         solution = document.createElement("iframe")
         solution.setAttribute("src", solutionText.textContent)
+
+        // link zum iframe
+        const link = document.createElement("a")
+        link.setAttribute("class", "wireframe-link")
+        link.onclick = function () {
+            window.location = solutionText.textContent
+        }
+        link.innerHTML = `
+            <br>
+            <br>
+            Zum iFrame
+        `
+        subtitle.appendChild(link)
+
+    // Javascript bzw source code lösung -> content wird in <pre><code> gewrapped damit highlight.js benutzt werden kann
     } else if (solutionText.getAttribute("type") === "language-js" || solutionText.getAttribute("type") === "language-php") {
         solution = document.createElement("div")
         solution.setAttribute("class", "solution")
@@ -120,7 +141,6 @@ function createQuestionAndSolution(subTitleText, solutionText) {
         const pre = document.createElement("pre")
         const code = document.createElement("code")
         code.setAttribute("class", "language-js")
-        console.log("lmao")
         fetch(solutionText.textContent)
             .then(response => response.text())
             .then(data => {
@@ -129,8 +149,7 @@ function createQuestionAndSolution(subTitleText, solutionText) {
         pre.appendChild(code)
         solution.appendChild(pre)
 
-    }
-    else {
+    } else {
         solution = document.createElement("div")
         solution.setAttribute("class", "solution")
         solution.innerHTML = solutionText.textContent

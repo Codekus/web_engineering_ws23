@@ -1,11 +1,9 @@
 async function readTextFiles() {
-    const fetchA = fetch('http://localhost:8000/resources/A.txt')
-        .then(res => res.text())
-        .catch(error => console.error('Error fetching A.txt:', error));
+    const resA = await fetch('http://localhost:8000/resources/A.txt');
+    const fetchA = resA.text();
 
-    const fetchB = fetch('http://localhost:8000/resources/B.txt')
-        .then(res => res.text())
-        .catch(error => console.error('Error fetching B.txt:', error));
+    const resB = await fetch('http://localhost:8000/resources/B.txt');
+    const fetchB = resB.text();
 
 
     const main = document.querySelector("main")

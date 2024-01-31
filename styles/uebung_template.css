@@ -59,6 +59,14 @@ iframe {
     overflow: auto;
 }
 
+.wireframe-link:hover {
+    cursor: pointer;
+}
+
+.wireframe-link {
+    color: cornflowerblue;
+}
+
 
 #error-container {
     margin-top: 15px;

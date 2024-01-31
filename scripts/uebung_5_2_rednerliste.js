@@ -43,6 +43,7 @@ function intToTimeStr(totalSeconds) {
     ].join(':');
 }
 
+
 // macht aus 5 -> 05
 function formatNumberToTime(num) {
     return num < 10 ? "0" + num : num;

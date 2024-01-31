@@ -12,7 +12,7 @@
                 Verwenden Sie dabei ausschließlich die Promise-API ohne async/await.
 
             </subtitle>
-            <solution type="wireframe">wireframes/uebung_8_1.html</solution>
+            <solution type="language-js">scripts/uebung_8_1.js</solution>
         </question>
     </task>
 
@@ -22,7 +22,7 @@
             <subtitle>Lösen Sie die letzte Aufgabe mit async/await statt Promise.
 
             </subtitle>
-            <solution type="wireframe">wireframes/uebung_8_2.html</solution>
+            <solution type="language-js">scripts/uebung_8_2.js</solution>
         </question>
     </task>
 
@@ -36,6 +36,7 @@
             </subtitle>
             <solution type="wireframe">wireframes/uebung_8_3.html</solution>
         </question>
+
     </task>
 
 
