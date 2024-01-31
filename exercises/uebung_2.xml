@@ -59,5 +59,13 @@
         </question>
     </task>
 
+    <task type="task-code">
+        <title>Wireframe mit HTML und CSS</title>
+        <question>
+            <subtitle></subtitle>
+            <solution type="wireframe">wireframes/uebung_2_table.html</solution>
+        </question>
+    </task>
+
 
 </root>

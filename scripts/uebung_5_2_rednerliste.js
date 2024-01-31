@@ -2,7 +2,7 @@
 
 
 function addRedner(name) {
-    if(name === "") return
+    if(name === "" || !name.trim().length) return
     stopAllTimer()
     const redContainer = document.getElementById("rednerContainer");
     const newRedner = document.createElement("li");
