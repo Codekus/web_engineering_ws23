@@ -1,7 +1,7 @@
 <!?php
 // remove the "!" before the php tags, if you want to run the script
 
-$jsonFilePath = 'user_data.json';
+$jsonFilePath = 'user_database.json';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];

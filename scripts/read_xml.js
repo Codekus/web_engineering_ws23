@@ -21,6 +21,8 @@ async function loadXMLFile() {
                 header.innerHTML =title
                 return header;
             })());
+
+
             var textTasks = xmlDoc.querySelectorAll("task")
             textTasks.forEach(x => x)
             var titleCount = 0;
@@ -29,6 +31,8 @@ async function loadXMLFile() {
                 const title = createH1Title(task.querySelector("title"), "title-" + titleCount++)
                 const questions = task.querySelectorAll("question")
                 textSection.appendChild(title)
+
+                // für jede Frage subtitel bei unterfragen und Lösung auslesen und HTML Element für erstellen
                 for (var ques of questions) {
                     const question = createQuestionAndSolution(
                         ques.querySelector("subtitle"),
@@ -42,6 +46,7 @@ async function loadXMLFile() {
 
             }
     }).catch(() => {
+        // Falls Übung XML nicht vorhanden ist
         const content = document.getElementById("content")
         content.innerHTML = `
             <section id="error-container">
@@ -67,16 +72,7 @@ function createTaskSection(classValue) {
     return section;
 }
 
-/**
- *
- * @returns
- * <section class="task-code"> </section>
- */
-function createCodeTextSection() {
-    const section = document.createElement("section")
-    section.setAttribute("class", "task-code")
-    return section;
-}
+
 
 /**
  *
@@ -97,9 +93,9 @@ function createH1Title(text, id) {
 
 /**
  *
- * @param subTitleText
- * @param solutionText
- * @returns
+ * @param  subTitleText - An HTML element containing the text for the subtitle.
+ * @param solutionText - An HTML element containing the text or URL for the solution,
+ *                       with an attribute specifying the solution type (e.g., wireframe, language-js, language-php).
  * <div class="question">
  *     <div class="subtitle"> subTitleText </div>
  *     <div class="solution"> solutionText </div>

@@ -52,6 +52,12 @@
         #github-link {
         }
 
+        #example-error {
+            cursor: pointer;
+            color: cornflowerblue;
+            text-decoration: underline;
+        }
+
 
     </style>
 
@@ -93,6 +99,16 @@
                     Verlinkung zu der Übung erstellt. Bei keinem gefundenen Ergebnis wird ein entsprechender Text ausgegeben. Sollte
                     versucht werden eine leere Suche auszuführen, so wird eine Fehlermeldung ausgegeben
                 </p>
+
+                <h1>Errorhandling</h1>
+
+                <p>
+                    Wird in der URL für eine Übung ein falscher Parameter eingegeben so wird eine entsprechende Fehlerseite aufgerufen.
+                    Zum Beispiel:
+                    <br><br>
+                    <a id="example-error" onclick="redirectToExercise('Fehler')">Weiterleitung zur Fehlerseite</a>
+                </p>
+
                 <a id="github-link" href="https://github.com/Codekus/web_engineering_ws23" target="_blank"><i style="font-size:84px" class="fa">&#xf09b;</i>
                     Github Repository
                 </a>
