@@ -53,7 +53,7 @@ async function loadXMLFile() {
                 <p>
                     Diese Übung wurde nicht gefunden
                 </p> 
-                <button onclick="window.location.href = '/';">
+                <button onclick="window.location.href = 'index.html';">
                     Zurück zur Startseite
                 </button>
              </section>
