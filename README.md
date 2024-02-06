@@ -15,3 +15,5 @@ python3 -m http.server <port>
 # oder:
 python -m http.server <port>
 ```
+
+Am besten lässt sich der Navigator mit Firefox nutzen
