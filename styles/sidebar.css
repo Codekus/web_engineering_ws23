@@ -46,7 +46,7 @@
         background-color: gray;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 40px;
+        padding-top: 20px;
         opacity: 0.85;
     }
 
@@ -65,7 +65,7 @@
     #menu-link-container > a {
         color: white;
         transition: 0.3s;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         margin-bottom: 1vh;
 
         cursor: pointer;
