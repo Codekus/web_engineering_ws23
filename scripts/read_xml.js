@@ -24,7 +24,7 @@ async function loadXMLFile() {
 
 
             var textTasks = xmlDoc.querySelectorAll("task")
-            textTasks.forEach(x => x)
+            //textTasks.forEach(x => x)
             var titleCount = 0;
             for (var task of textTasks) {
                 const textSection = createTaskSection(task.getAttribute("type"));

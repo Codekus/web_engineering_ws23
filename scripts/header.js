@@ -26,11 +26,6 @@ async function loadHeader() {
 
 }
 
-function changeSearchbarVisibility() {
-    document.getElementById("searchbar").style.setProperty("visibility", "visible");
-    document.getElementById("search-icon-mobile").style.setProperty("visibility", "hidden");
-    document.getElementById("search-button-mobile").style.setProperty("visibility", "hidden");
-}
 
 function openMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
@@ -113,18 +108,6 @@ function search() {
 
         return true;
     });
-}
-
-function getTime() {
-    var currentdate = new Date();
-    var datetime = "Last Sync: " + currentdate.getDate() + "/"
-        + (currentdate.getMonth()+1)  + "/"
-        + currentdate.getFullYear() + " @ "
-        + currentdate.getHours() + ":"
-        + currentdate.getMinutes() + ":"
-        + currentdate.getSeconds() + ":"
-        + currentdate.getMilliseconds();
-    return datetime
 }
 
 function redirectToExercise(exercise) {
